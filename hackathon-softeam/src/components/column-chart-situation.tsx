@@ -1,26 +1,41 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import ReactApexChart from "react-apexcharts";
 import { ApexOptions } from "apexcharts";
 
-type SeriesType = ApexAxisChartSeries;
+interface ApexChartProps {
+  commune: any; // Données de la commune sélectionnée
+  ecoles: any[]; // Données des écoles pour la commune
+}
 
-const ApexChart: React.FC = () => {
-  
-  const categories = ["Commerce", "Transport", "Scolarité"];
-  const ville1 = [3, 0, 2];
-  const ideal = [8, 3, 4];
+const ApexChart: React.FC<ApexChartProps> = ({ commune, ecoles }) => {
+  const categories = ["Commerce", "Transport", "Écoles"];
+  const [communeData, setCommuneData] = useState<number[]>([0, 0, 0]);
+  const [ideal, setIdeal] = useState<number[]>([8, 3, 4]); // Valeurs idéales dynamiques
 
-  const [chartData] = useState<{
-    series: SeriesType;
-    options: ApexOptions;
-  }>( {
+  useEffect(() => {
+    if (commune && ecoles) {
+      // Calcule le total des écoles pour la commune
+      const totalEcoles = ecoles.reduce((sum, ecole) => sum + ecole.nombre_total, 0);
+
+      // Calcule le nombre de médecins idéal pour la commune
+      const idealMedecins = Math.ceil(commune.population / 1000); // 1 médecin pour 1000 habitants
+
+      // Met à jour les données pour la commune
+      setCommuneData([3, 0, totalEcoles, commune.nombre_medecins]);
+
+      // Met à jour les valeurs idéales
+      setIdeal([8, 3, 4, idealMedecins]);
+    }
+  }, [commune, ecoles]);
+
+  const chartData = {
     series: [
-      { name: "Ville 1", data: ville1 },
+      { name: commune.nom_commune, data: communeData },
       { name: "Idéal", data: ideal },
     ],
     options: {
       chart: {
-        type: "bar",
+        type: "bar", // Type de graphique
         height: 350,
       },
       plotOptions: {
@@ -28,33 +43,7 @@ const ApexChart: React.FC = () => {
           horizontal: false,
           columnWidth: "55%",
           borderRadius: 5,
-          borderRadiusApplication: "end",
-          distributed: false,
         },
-      },
-      dataLabels: {
-        enabled: true,
-        formatter: function (val: number, opts: any) {
-          const seriesIndex = opts.seriesIndex;
-          const dataPointIndex = opts.dataPointIndex;
-          const idealVal = ideal[dataPointIndex];
-        
-          if (seriesIndex === 0) {
-            return val > idealVal ? "✓" : "✗";
-          }
-        
-          return "";
-        },
-        style: {
-          fontSize: "18px",
-          colors: ["#000"],
-        },
-        offsetY: -10,
-      },
-      stroke: {
-        show: true,
-        width: 2,
-        colors: ["transparent"],
       },
       xaxis: {
         categories: categories,
@@ -64,28 +53,8 @@ const ApexChart: React.FC = () => {
           text: "Nb de services",
         },
       },
-      fill: {
-        opacity: 1,
-        colors: [
-          function ({ seriesIndex }: { seriesIndex: number; dataPointIndex: number }) {
-            if (seriesIndex === 0) return "#FFA500"; // orange pour "Idéal"
-            if (seriesIndex === 1) return "#3A9D23"; // vert pour "Idéal"
-          },
-        ] as NonNullable<ApexOptions["fill"]>["colors"],
-      },
-      tooltip: {
-        y: {
-          formatter: (
-            val: number,
-            { dataPointIndex }: { seriesIndex: number; dataPointIndex: number }
-          ): string => {
-            const category = categories[dataPointIndex];
-            return `${val} ${category}`;
-          },
-        },
-      },
-    },
-  });
+    } as ApexOptions, // Ajout explicite du type ApexOptions
+  };
 
   return (
     <div style={{ display: "flex", justifyContent: "center" }}>

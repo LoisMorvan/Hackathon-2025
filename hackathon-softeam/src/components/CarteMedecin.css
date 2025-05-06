@@ -1,0 +1,24 @@
+.medecin-card {
+    background-color: #2ECC71;
+    color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    width: fit-content;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .medecin-region {
+    font-size: 0.85rem;
+    font-weight: bold;
+    opacity: 0.9;
+    letter-spacing: 0.05em;
+  }
+  
+  .medecin-value {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 0.25rem;
+  }
+  

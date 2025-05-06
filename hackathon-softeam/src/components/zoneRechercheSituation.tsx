@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { getCommunes, getCommuneInfo, getEtablissements, getEcolesStats } from "../services/services";
-import ApexChart from './column-chart-comparateur'; // Import du composant du graphe
+import ApexChart from './column-chart-situation'; // Import du composant du graphe
 import '../styles/zoneRecherche.css';
 import { Cartehabitant } from '../components/CarteStatistique';
 import { CarteMedecin } from '../components/CarteMedecin';
@@ -179,11 +179,8 @@ const ZoneRecherche = () => {
 
   return (
     <div className="zone-recherche" ref={searchRef}>
-      <h3>Zone de recherche 1</h3>
+      <h3>Zone de recherche</h3>
       {renderZone(1, inputValue1, suggestions1, selectedList1)}
-
-      <h3>Zone de recherche 2</h3>
-      {renderZone(2, inputValue2, suggestions2, selectedList2)}
 
       <button onClick={handleRecherche} className="btn-recherche">Rechercher</button>
       {isLoading && <p>Chargement des données en cours...</p>}
@@ -192,10 +189,8 @@ const ZoneRecherche = () => {
       {chartData && (
         <div style={{ marginTop: '50px' }}>
             <ApexChart
-            ville1={chartData.communeInfo1}
-            ville2={chartData.communeInfo2}
-            ecoles1={chartData.ecoles1}
-            ecoles2={chartData.ecoles2}
+            commune={chartData.communeInfo1}
+            ecoles={chartData.ecoles1}
             />
 
             {/* Calcul des totaux pour la Zone 1 */}
@@ -213,7 +208,7 @@ const ZoneRecherche = () => {
             nombreEtablissements={chartData.etablissements1.reduce((sum, e) => sum + (e.etablissements?.length || 0), 0)}
             />
 
-            {/* Calcul des totaux pour la Zone 2 */}
+            {/* Calcul des totaux pour la Zone 2
             <h3>Zone 2 : {chartData.communeInfo2.map(c => c.nom_commune).join(", ")}</h3>
             <Cartehabitant
             title="Habitants"
@@ -226,7 +221,7 @@ const ZoneRecherche = () => {
             <CarteEtablissement
             region="Établissements de santé"
             nombreEtablissements={chartData.etablissements2.reduce((sum, e) => sum + (e.etablissements?.length || 0), 0)}
-            />
+            /> */}
         </div>
         )}
     </div>

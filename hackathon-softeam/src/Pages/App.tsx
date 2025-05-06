@@ -2,13 +2,14 @@
 import '../App.css';
 import Navbar from '../components/Navbar';
 import CityTable from '../components/CityTable';
-import ZoneRecherche from '../components/zoneRecherche';
+import CouvertureCards from '../components/CouvertureCards';
 
 function App() {
   return (
     <div lang="fr">
       <Navbar /> 
       <main> 
+        <CouvertureCards />
         <CityTable />
       </main>
       <Footer />
