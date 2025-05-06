@@ -21,7 +21,7 @@ def get_communes(value: Optional[str] = Query(None, description="Nom ou code pos
     filtrées par nom ou code postal si un paramètre est fourni.
     """
     try:
-        logger.info(f"🔍 Requête /communes avec filtre: {value}")
+        logger.info(f"Requête /communes avec filtre: {value}")
         url, params = build_commune_api_request(value)
 
         response = requests.get(url, params=params)
@@ -41,7 +41,7 @@ def commune_info(value: Optional[str] = Query(None, description="Nom ou code pos
     pour une ou plusieurs communes stockées dans un fichier JSON.
     """
     try:
-        logger.info(f"📍 Requête /commune-info avec filtre: {value}")
+        logger.info(f"Requête /commune-info avec filtre: {value}")
         if not os.path.exists(DATA_FILE):
             raise HTTPException(
                 status_code=500, detail="Le fichier 'communes_info.json' est introuvable. Veuillez le générer d'abord.")
@@ -85,7 +85,7 @@ def update_commune_info_file() -> None:
     et ajoute le nombre de médecins pour chaque commune.
     """
     try:
-        logger.info("🔄 Mise à jour du fichier communes_info.json en cours...")
+        logger.info("Mise à jour du fichier communes_info.json en cours...")
         url = "https://geo.api.gouv.fr/departements/44/communes"
         params = {"fields": "nom,codesPostaux,population,centre", "format": "json"}
 
@@ -112,10 +112,10 @@ def update_commune_info_file() -> None:
             json.dump(enriched_data, f, ensure_ascii=False, indent=2)
 
         get_cached_commune_info.cache_clear()
-        logger.info("✅ Fichier communes_info.json mis à jour avec succès.")
+        logger.info("Fichier communes_info.json mis à jour avec succès.")
 
     except Exception as e:
-        logger.exception(f"❌ Échec mise à jour communes_info.json : {e}")
+        logger.exception(f"Échec mise à jour communes_info.json : {e}")
         raise
 
 
