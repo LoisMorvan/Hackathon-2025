@@ -70,6 +70,19 @@ def commune_info(value: Optional[str] = Query(None, description="Nom ou code pos
             status_code=500, detail="Erreur lors de la lecture des données locales")
 
 
+@router.post("/admin/update-commune-info", tags=["Admin"])
+def trigger_update_commune_info():
+    """
+    Met à jour manuellement le fichier communes_info.json en appelant l’API officielle.
+    """
+    try:
+        update_commune_info_file()
+        return {"message": "Fichier communes_info.json mis à jour avec succès."}
+    except Exception as e:
+        raise HTTPException(
+            status_code=500, detail=f"Erreur lors de la mise à jour : {str(e)}")
+
+
 @lru_cache(maxsize=1)
 def get_cached_commune_info() -> List[CommuneInfo]:
     """
