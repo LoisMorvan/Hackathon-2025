@@ -23,31 +23,29 @@ sample_data1 = json.dumps([
     {"nom_commune": "C", "ratio": 1.0}
 ])
 
-mock_ecoles = {
-    "results": [
-        {
-            "position": {"lat": 47.2, "lon": -1.55},
-            "code_postal_uai": "44000",
-            "adresse_uai": "1 rue de l'\u00e9cole",
-            "denomination_principale": "\u00c9cole \u00c9l\u00e9mentaire Jules Ferry",
-            "libelle_commune": "Nantes"
-        },
-        {
-            "position": {"lat": 47.2, "lon": -1.56},
-            "code_postal_uai": "44000",
-            "adresse_uai": "2 avenue du lyc\u00e9e",
-            "denomination_principale": "LYCEE Cl\u00e9menceau",
-            "libelle_commune": "Nantes"
-        }
-    ]
-}
+ecoles_json_data = json.dumps([
+    {
+        "position": {"lat": 47.2, "lon": -1.55},
+        "code_postal_uai": "44000",
+        "adresse_uai": "1 rue de l'école",
+        "denomination_principale": "École Élémentaire Jules Ferry",
+        "libelle_commune": "Nantes"
+    },
+    {
+        "position": {"lat": 47.2, "lon": -1.56},
+        "code_postal_uai": "44000",
+        "adresse_uai": "2 avenue du lycée",
+        "denomination_principale": "LYCEE Clémenceau",
+        "libelle_commune": "Nantes"
+    }
+])
 
 mock_etablissements = {
     "results": [
         {
-            "rs": "Maison M\u00e9dicale du Centre",
+            "rs": "Maison Médicale du Centre",
             "com_code": "44109",
-            "address": "10 rue de la sant\u00e9",
+            "address": "10 rue de la santé",
             "coord": {"lat": 47.2, "lon": -1.55},
             "dateouv": "2012-09-01",
             "com_name": "Nantes"
@@ -123,13 +121,12 @@ def test_get_couvertures_empty_file(mock_exists, mock_file):
     assert response.status_code == 200
     assert response.json() == {"message": "Aucune commune trouvée."}
 
+# === Écoles ===
 
-@patch("requests.get")
-def test_ecoles_stats_all(mock_get):
-    mock_get.side_effect = [
-        Mock(status_code=200, json=lambda: mock_ecoles),
-        Mock(status_code=200, json=lambda: {"results": []})
-    ]
+
+@patch("builtins.open", new_callable=mock_open, read_data=ecoles_json_data)
+@patch("os.path.exists", return_value=True)
+def test_ecoles_stats_all(mock_exists, mock_file):
     response = client.get("/ecoles/stats")
     assert response.status_code == 200
     data = response.json()
@@ -138,26 +135,15 @@ def test_ecoles_stats_all(mock_get):
     assert data["répartition"]["college_lycee"] == 1
 
 
-@patch("requests.get")
-def test_ecoles_stats_filtered(mock_get):
-    mock_get.side_effect = [
-        Mock(status_code=200, json=lambda: mock_ecoles),
-        Mock(status_code=200, json=lambda: {"results": []})
-    ]
+@patch("builtins.open", new_callable=mock_open, read_data=ecoles_json_data)
+@patch("os.path.exists", return_value=True)
+def test_ecoles_stats_filtered(mock_exists, mock_file):
     response = client.get("/ecoles/stats?ville=Nantes")
     assert response.status_code == 200
     data = response.json()
     assert data["nombre_total"] == 2
     assert all(ecole["libelle_commune"].lower() ==
                "nantes" for ecole in data["données"])
-
-
-@patch("requests.get", side_effect=requests.exceptions.RequestException("API HS"))
-def test_ecoles_stats_api_error(mock_get):
-    response = client.get("/ecoles/stats")
-    assert response.status_code == 500
-    assert response.json() == {
-        "detail": "Erreur lors de la récupération des données"}
 
 
 @patch("requests.get")
@@ -170,7 +156,7 @@ def test_get_etablissements_success(mock_get):
     assert data["commune"] == "Nantes"
     assert isinstance(data["etablissements"], list)
     assert len(data["etablissements"]) == 1
-    assert data["etablissements"][0]["rs"] == "Maison M\u00e9dicale du Centre"
+    assert data["etablissements"][0]["rs"] == "Maison Médicale du Centre"
 
 
 @patch("requests.get", side_effect=requests.exceptions.RequestException("Erreur API"))
@@ -224,3 +210,27 @@ def test_post_update_commune_error(mock_update):
     response = client.post("/admin/update-commune-info")
     assert response.status_code == 500
     assert "Erreur lors de la mise à jour" in response.json()["detail"]
+
+# === POST admin ecoles ===
+
+
+@patch("requests.get")
+def test_post_admin_ecoles_success(mock_get):
+    # Simule une première page avec des résultats puis une page vide
+    mock_get.side_effect = [
+        Mock(status_code=200, json=lambda: {
+             "results": json.loads(ecoles_json_data)}),
+        Mock(status_code=200, json=lambda: {"results": []}),
+    ]
+
+    response = client.get("/admin/ecoles")
+    assert response.status_code == 200
+    assert "Fichier JSON généré" in response.json()["message"]
+
+
+@patch("requests.get", side_effect=requests.exceptions.RequestException("Erreur réseau"))
+def test_post_admin_ecoles_failure(mock_get):
+    response = client.get("/admin/ecoles")
+    assert response.status_code == 500
+    assert response.json() == {
+        "detail": "Erreur lors de la récupération des données"}
