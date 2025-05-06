@@ -1,13 +1,13 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
-import ApexChart from '../components/column-chart-situation';
+import ZoneRecherche from '../components/zoneRechercheSituation';
 
 const Situation: React.FC = () => {
     return (
         <div>
           <Navbar />
           <main style={{ marginTop: '100px' }}>
-            <ApexChart />
+            <ZoneRecherche />
           </main>
           <Footer />
         </div>
