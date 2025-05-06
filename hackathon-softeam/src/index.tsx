@@ -2,10 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './index.css';
-import App from './App';
-import CityTable from './components/CityTable';
+import App from './Pages/App';
 import reportWebVitals from './reportWebVitals';
-import Comparateur from './Comparateur';
+import Comparateur from './Pages/Comparateur';
+import Situation from './Pages/Situation';
+
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -17,7 +18,7 @@ root.render(
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/comparateur" element={<Comparateur />} />
-        <Route path="/simulation" element={<CityTable />} />
+        <Route path="/situation" element={<Situation />} />
       </Routes>
     </Router>
   </React.StrictMode>

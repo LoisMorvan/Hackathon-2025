@@ -10,7 +10,7 @@ def index(request: Request):
     Endpoint racine de l'API.
     Fournit une description générale et les principales routes disponibles.
     """
-    client_host = request.client.host
+    client_host = request.client.host if request.client else "inconnu"
     logger.info(f"Accès à la racine de l’API depuis {client_host}")
 
     return {

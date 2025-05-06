@@ -75,8 +75,8 @@ const ZoneRecherche = () => {
 
   const handleRecherche = async () => {
     try {
-      setIsLoading(true);
-      
+      setIsLoading(true);  
+
       const noms1 = selectedList1.map(c => c.nom);
       const noms2 = selectedList2.map(c => c.nom);
   
@@ -176,7 +176,6 @@ const ZoneRecherche = () => {
 
       <button onClick={handleRecherche} className="btn-recherche">Rechercher</button>
       {isLoading && <p>Chargement des données en cours...</p>}
-      
 
       {/* Affichage du graphe si les données sont disponibles */}
       {chartData && (

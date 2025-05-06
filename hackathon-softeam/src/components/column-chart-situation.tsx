@@ -8,7 +8,6 @@ const ApexChart: React.FC = () => {
   
   const categories = ["Commerce", "Transport", "Scolarité"];
   const ville1 = [3, 0, 2];
-  const ville2 = [6, 4, 1];
   const ideal = [8, 3, 4];
 
   const [chartData] = useState<{
@@ -17,7 +16,6 @@ const ApexChart: React.FC = () => {
   }>( {
     series: [
       { name: "Ville 1", data: ville1 },
-      { name: "Ville 2", data: ville2 },
       { name: "Idéal", data: ideal },
     ],
     options: {
@@ -41,7 +39,7 @@ const ApexChart: React.FC = () => {
           const dataPointIndex = opts.dataPointIndex;
           const idealVal = ideal[dataPointIndex];
         
-          if (seriesIndex === 0 || seriesIndex === 1) {
+          if (seriesIndex === 0) {
             return val > idealVal ? "✓" : "✗";
           }
         
@@ -70,9 +68,8 @@ const ApexChart: React.FC = () => {
         opacity: 1,
         colors: [
           function ({ seriesIndex }: { seriesIndex: number; dataPointIndex: number }) {
-            if (seriesIndex === 0) return "#008FFB"; // bleu pour "Idéal"
-            if (seriesIndex === 1) return "#FFA500"; // orange pour "Idéal"
-            if (seriesIndex === 2) return "#3A9D23"; // vert pour "Idéal"
+            if (seriesIndex === 0) return "#FFA500"; // orange pour "Idéal"
+            if (seriesIndex === 1) return "#3A9D23"; // vert pour "Idéal"
           },
         ] as NonNullable<ApexOptions["fill"]>["colors"],
       },
