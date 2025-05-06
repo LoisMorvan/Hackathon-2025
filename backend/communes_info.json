@@ -1,0 +1,2279 @@
+[
+  {
+    "nom_commune": "Abbaretz",
+    "code_postal": "44170",
+    "population": 2052,
+    "nombre_medecins": 6,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.5546,
+      "lon": -1.4929
+    }
+  },
+  {
+    "nom_commune": "Aigrefeuille-sur-Maine",
+    "code_postal": "44140",
+    "population": 4121,
+    "nombre_medecins": 34,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.0735,
+      "lon": -1.4121
+    }
+  },
+  {
+    "nom_commune": "Ancenis-Saint-Géréon",
+    "code_postal": "44150",
+    "population": 11346,
+    "nombre_medecins": 60,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.382,
+      "lon": -1.1681
+    }
+  },
+  {
+    "nom_commune": "Chaumes-en-Retz",
+    "code_postal": "44320, 44680",
+    "population": 7288,
+    "nombre_medecins": 12,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.1561,
+      "lon": -1.9153
+    }
+  },
+  {
+    "nom_commune": "Assérac",
+    "code_postal": "44410",
+    "population": 1881,
+    "nombre_medecins": 19,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.442,
+      "lon": -2.4127
+    }
+  },
+  {
+    "nom_commune": "Avessac",
+    "code_postal": "44460",
+    "population": 2451,
+    "nombre_medecins": 0,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.645,
+      "lon": -1.9724
+    }
+  },
+  {
+    "nom_commune": "Basse-Goulaine",
+    "code_postal": "44115",
+    "population": 9617,
+    "nombre_medecins": 68,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.2134,
+      "lon": -1.4628
+    }
+  },
+  {
+    "nom_commune": "Batz-sur-Mer",
+    "code_postal": "44740",
+    "population": 2799,
+    "nombre_medecins": 0,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.2789,
+      "lon": -2.4701
+    }
+  },
+  {
+    "nom_commune": "La Bernerie-en-Retz",
+    "code_postal": "44760",
+    "population": 3523,
+    "nombre_medecins": 8,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.0862,
+      "lon": -2.0318
+    }
+  },
+  {
+    "nom_commune": "Besné",
+    "code_postal": "44160",
+    "population": 3317,
+    "nombre_medecins": 8,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.3828,
+      "lon": -2.0703
+    }
+  },
+  {
+    "nom_commune": "Le Bignon",
+    "code_postal": "44140",
+    "population": 3967,
+    "nombre_medecins": 39,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.1,
+      "lon": -1.5048
+    }
+  },
+  {
+    "nom_commune": "Blain",
+    "code_postal": "44130",
+    "population": 10352,
+    "nombre_medecins": 83,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.4562,
+      "lon": -1.7817
+    }
+  },
+  {
+    "nom_commune": "La Boissière-du-Doré",
+    "code_postal": "44430",
+    "population": 1114,
+    "nombre_medecins": 0,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.2347,
+      "lon": -1.2063
+    }
+  },
+  {
+    "nom_commune": "Bouaye",
+    "code_postal": "44830",
+    "population": 8281,
+    "nombre_medecins": 0,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.1478,
+      "lon": -1.6687
+    }
+  },
+  {
+    "nom_commune": "Bouée",
+    "code_postal": "44260",
+    "population": 1100,
+    "nombre_medecins": 0,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.3072,
+      "lon": -1.9182
+    }
+  },
+  {
+    "nom_commune": "Bouguenais",
+    "code_postal": "44340",
+    "population": 20590,
+    "nombre_medecins": 98,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.171,
+      "lon": -1.6181
+    }
+  },
+  {
+    "nom_commune": "Villeneuve-en-Retz",
+    "code_postal": "44580",
+    "population": 5004,
+    "nombre_medecins": 13,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.035,
+      "lon": -1.9019
+    }
+  },
+  {
+    "nom_commune": "Boussay",
+    "code_postal": "44190",
+    "population": 2814,
+    "nombre_medecins": 0,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.0546,
+      "lon": -1.1659
+    }
+  },
+  {
+    "nom_commune": "Bouvron",
+    "code_postal": "44130",
+    "population": 3067,
+    "nombre_medecins": 8,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.42,
+      "lon": -1.8691
+    }
+  },
+  {
+    "nom_commune": "Brains",
+    "code_postal": "44830",
+    "population": 2760,
+    "nombre_medecins": 6,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.1699,
+      "lon": -1.7238
+    }
+  },
+  {
+    "nom_commune": "Campbon",
+    "code_postal": "44750",
+    "population": 4031,
+    "nombre_medecins": 27,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.4155,
+      "lon": -1.988
+    }
+  },
+  {
+    "nom_commune": "Carquefou",
+    "code_postal": "44470",
+    "population": 20535,
+    "nombre_medecins": 91,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.2968,
+      "lon": -1.4687
+    }
+  },
+  {
+    "nom_commune": "Casson",
+    "code_postal": "44390",
+    "population": 2600,
+    "nombre_medecins": 32,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.3925,
+      "lon": -1.548
+    }
+  },
+  {
+    "nom_commune": "Le Cellier",
+    "code_postal": "44850",
+    "population": 4011,
+    "nombre_medecins": 14,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.3375,
+      "lon": -1.3553
+    }
+  },
+  {
+    "nom_commune": "Divatte-sur-Loire",
+    "code_postal": "44450",
+    "population": 7158,
+    "nombre_medecins": 53,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.2789,
+      "lon": -1.3386
+    }
+  },
+  {
+    "nom_commune": "La Chapelle-des-Marais",
+    "code_postal": "44410",
+    "population": 4424,
+    "nombre_medecins": 4,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.4362,
+      "lon": -2.2477
+    }
+  },
+  {
+    "nom_commune": "La Chapelle-Glain",
+    "code_postal": "44670",
+    "population": 811,
+    "nombre_medecins": 0,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.6243,
+      "lon": -1.1919
+    }
+  },
+  {
+    "nom_commune": "La Chapelle-Heulin",
+    "code_postal": "44330",
+    "population": 3443,
+    "nombre_medecins": 23,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.1745,
+      "lon": -1.3468
+    }
+  },
+  {
+    "nom_commune": "La Chapelle-Launay",
+    "code_postal": "44260",
+    "population": 3246,
+    "nombre_medecins": 18,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.3474,
+      "lon": -1.9786
+    }
+  },
+  {
+    "nom_commune": "La Chapelle-sur-Erdre",
+    "code_postal": "44240",
+    "population": 20483,
+    "nombre_medecins": 123,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.3041,
+      "lon": -1.5621
+    }
+  },
+  {
+    "nom_commune": "Châteaubriant",
+    "code_postal": "44110",
+    "population": 12231,
+    "nombre_medecins": 32,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.7199,
+      "lon": -1.3912
+    }
+  },
+  {
+    "nom_commune": "Château-Thébaud",
+    "code_postal": "44690",
+    "population": 3138,
+    "nombre_medecins": 5,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.1169,
+      "lon": -1.4467
+    }
+  },
+  {
+    "nom_commune": "Chauvé",
+    "code_postal": "44320",
+    "population": 3035,
+    "nombre_medecins": 2,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.1602,
+      "lon": -2.0132
+    }
+  },
+  {
+    "nom_commune": "Cheix-en-Retz",
+    "code_postal": "44640",
+    "population": 1172,
+    "nombre_medecins": 0,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.1819,
+      "lon": -1.8003
+    }
+  },
+  {
+    "nom_commune": "La Chevrolière",
+    "code_postal": "44118",
+    "population": 6342,
+    "nombre_medecins": 21,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.0908,
+      "lon": -1.5965
+    }
+  },
+  {
+    "nom_commune": "Clisson",
+    "code_postal": "44190",
+    "population": 7459,
+    "nombre_medecins": 59,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.0936,
+      "lon": -1.2654
+    }
+  },
+  {
+    "nom_commune": "Conquereuil",
+    "code_postal": "44290",
+    "population": 1072,
+    "nombre_medecins": 0,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.6467,
+      "lon": -1.7672
+    }
+  },
+  {
+    "nom_commune": "Cordemais",
+    "code_postal": "44360",
+    "population": 3954,
+    "nombre_medecins": 22,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.2918,
+      "lon": -1.8349
+    }
+  },
+  {
+    "nom_commune": "Corsept",
+    "code_postal": "44560",
+    "population": 2615,
+    "nombre_medecins": 23,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.2672,
+      "lon": -2.0894
+    }
+  },
+  {
+    "nom_commune": "Couëron",
+    "code_postal": "44220",
+    "population": 23541,
+    "nombre_medecins": 70,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.2391,
+      "lon": -1.7472
+    }
+  },
+  {
+    "nom_commune": "Couffé",
+    "code_postal": "44521",
+    "population": 2534,
+    "nombre_medecins": 8,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.3873,
+      "lon": -1.2853
+    }
+  },
+  {
+    "nom_commune": "Le Croisic",
+    "code_postal": "44490",
+    "population": 4081,
+    "nombre_medecins": 3,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.2942,
+      "lon": -2.5245
+    }
+  },
+  {
+    "nom_commune": "Crossac",
+    "code_postal": "44160",
+    "population": 2985,
+    "nombre_medecins": 4,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.4055,
+      "lon": -2.1528
+    }
+  },
+  {
+    "nom_commune": "Derval",
+    "code_postal": "44590",
+    "population": 3578,
+    "nombre_medecins": 37,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.6546,
+      "lon": -1.6732
+    }
+  },
+  {
+    "nom_commune": "Donges",
+    "code_postal": "44480",
+    "population": 8117,
+    "nombre_medecins": 22,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.3398,
+      "lon": -2.0731
+    }
+  },
+  {
+    "nom_commune": "Drefféac",
+    "code_postal": "44530",
+    "population": 2288,
+    "nombre_medecins": 8,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.4676,
+      "lon": -2.0611
+    }
+  },
+  {
+    "nom_commune": "Erbray",
+    "code_postal": "44110",
+    "population": 3062,
+    "nombre_medecins": 0,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.6681,
+      "lon": -1.3269
+    }
+  },
+  {
+    "nom_commune": "La Baule-Escoublac",
+    "code_postal": "44500",
+    "population": 16613,
+    "nombre_medecins": 61,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.2925,
+      "lon": -2.3622
+    }
+  },
+  {
+    "nom_commune": "Fay-de-Bretagne",
+    "code_postal": "44130",
+    "population": 3852,
+    "nombre_medecins": 15,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.3881,
+      "lon": -1.8076
+    }
+  },
+  {
+    "nom_commune": "Fégréac",
+    "code_postal": "44460",
+    "population": 2257,
+    "nombre_medecins": 0,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.5762,
+      "lon": -2.029
+    }
+  },
+  {
+    "nom_commune": "Fercé",
+    "code_postal": "44660",
+    "population": 502,
+    "nombre_medecins": 0,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.8034,
+      "lon": -1.381
+    }
+  },
+  {
+    "nom_commune": "Frossay",
+    "code_postal": "44320",
+    "population": 3289,
+    "nombre_medecins": 26,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.2514,
+      "lon": -1.9371
+    }
+  },
+  {
+    "nom_commune": "Le Gâvre",
+    "code_postal": "44130",
+    "population": 1880,
+    "nombre_medecins": 0,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.5328,
+      "lon": -1.8046
+    }
+  },
+  {
+    "nom_commune": "Gétigné",
+    "code_postal": "44190",
+    "population": 3794,
+    "nombre_medecins": 39,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.0771,
+      "lon": -1.2196
+    }
+  },
+  {
+    "nom_commune": "Gorges",
+    "code_postal": "44190",
+    "population": 5090,
+    "nombre_medecins": 30,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.1032,
+      "lon": -1.3134
+    }
+  },
+  {
+    "nom_commune": "Grand-Auverné",
+    "code_postal": "44520",
+    "population": 770,
+    "nombre_medecins": 0,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.5797,
+      "lon": -1.3106
+    }
+  },
+  {
+    "nom_commune": "Grandchamp-des-Fontaines",
+    "code_postal": "44119",
+    "population": 6910,
+    "nombre_medecins": 33,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.3629,
+      "lon": -1.6234
+    }
+  },
+  {
+    "nom_commune": "Guémené-Penfao",
+    "code_postal": "44290",
+    "population": 5242,
+    "nombre_medecins": 33,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.6412,
+      "lon": -1.8223
+    }
+  },
+  {
+    "nom_commune": "Guenrouet",
+    "code_postal": "44530",
+    "population": 3577,
+    "nombre_medecins": 8,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.5133,
+      "lon": -1.947
+    }
+  },
+  {
+    "nom_commune": "Guérande",
+    "code_postal": "44350",
+    "population": 16684,
+    "nombre_medecins": 157,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.3358,
+      "lon": -2.4133
+    }
+  },
+  {
+    "nom_commune": "La Haie-Fouassière",
+    "code_postal": "44690",
+    "population": 4734,
+    "nombre_medecins": 23,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.1612,
+      "lon": -1.4033
+    }
+  },
+  {
+    "nom_commune": "Haute-Goulaine",
+    "code_postal": "44115",
+    "population": 5992,
+    "nombre_medecins": 34,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.1951,
+      "lon": -1.4097
+    }
+  },
+  {
+    "nom_commune": "Herbignac",
+    "code_postal": "44410",
+    "population": 7178,
+    "nombre_medecins": 43,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.451,
+      "lon": -2.3149
+    }
+  },
+  {
+    "nom_commune": "Héric",
+    "code_postal": "44810",
+    "population": 6528,
+    "nombre_medecins": 85,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.4208,
+      "lon": -1.6404
+    }
+  },
+  {
+    "nom_commune": "Indre",
+    "code_postal": "44610",
+    "population": 4172,
+    "nombre_medecins": 75,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.1993,
+      "lon": -1.6701
+    }
+  },
+  {
+    "nom_commune": "Issé",
+    "code_postal": "44520",
+    "population": 1825,
+    "nombre_medecins": 3,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.6219,
+      "lon": -1.4537
+    }
+  },
+  {
+    "nom_commune": "Jans",
+    "code_postal": "44170",
+    "population": 1381,
+    "nombre_medecins": 0,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.6254,
+      "lon": -1.6023
+    }
+  },
+  {
+    "nom_commune": "Joué-sur-Erdre",
+    "code_postal": "44440",
+    "population": 2753,
+    "nombre_medecins": 5,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.5084,
+      "lon": -1.4312
+    }
+  },
+  {
+    "nom_commune": "Juigné-des-Moutiers",
+    "code_postal": "44670",
+    "population": 327,
+    "nombre_medecins": 0,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.688,
+      "lon": -1.2267
+    }
+  },
+  {
+    "nom_commune": "Le Landreau",
+    "code_postal": "44430",
+    "population": 3214,
+    "nombre_medecins": 13,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.2089,
+      "lon": -1.3006
+    }
+  },
+  {
+    "nom_commune": "Lavau-sur-Loire",
+    "code_postal": "44260",
+    "population": 769,
+    "nombre_medecins": 0,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.3202,
+      "lon": -1.9571
+    }
+  },
+  {
+    "nom_commune": "Legé",
+    "code_postal": "44650",
+    "population": 4769,
+    "nombre_medecins": 47,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 46.9026,
+      "lon": -1.5713
+    }
+  },
+  {
+    "nom_commune": "Ligné",
+    "code_postal": "44850",
+    "population": 5593,
+    "nombre_medecins": 0,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.4035,
+      "lon": -1.3792
+    }
+  },
+  {
+    "nom_commune": "La Limouzinière",
+    "code_postal": "44310",
+    "population": 2468,
+    "nombre_medecins": 0,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 46.9872,
+      "lon": -1.637
+    }
+  },
+  {
+    "nom_commune": "Le Loroux-Bottereau",
+    "code_postal": "44430",
+    "population": 8595,
+    "nombre_medecins": 53,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.2325,
+      "lon": -1.3272
+    }
+  },
+  {
+    "nom_commune": "Louisfert",
+    "code_postal": "44110",
+    "population": 949,
+    "nombre_medecins": 0,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.67,
+      "lon": -1.4281
+    }
+  },
+  {
+    "nom_commune": "Lusanger",
+    "code_postal": "44590",
+    "population": 1064,
+    "nombre_medecins": 0,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.6752,
+      "lon": -1.5844
+    }
+  },
+  {
+    "nom_commune": "Machecoul-Saint-Même",
+    "code_postal": "44270",
+    "population": 7665,
+    "nombre_medecins": 52,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.0057,
+      "lon": -1.8063
+    }
+  },
+  {
+    "nom_commune": "Maisdon-sur-Sèvre",
+    "code_postal": "44690",
+    "population": 3071,
+    "nombre_medecins": 2,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.1181,
+      "lon": -1.3884
+    }
+  },
+  {
+    "nom_commune": "Malville",
+    "code_postal": "44260",
+    "population": 3689,
+    "nombre_medecins": 0,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.3441,
+      "lon": -1.8451
+    }
+  },
+  {
+    "nom_commune": "La Marne",
+    "code_postal": "44270",
+    "population": 1578,
+    "nombre_medecins": 0,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 46.9886,
+      "lon": -1.7251
+    }
+  },
+  {
+    "nom_commune": "Marsac-sur-Don",
+    "code_postal": "44170",
+    "population": 1529,
+    "nombre_medecins": 4,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.5948,
+      "lon": -1.6967
+    }
+  },
+  {
+    "nom_commune": "Massérac",
+    "code_postal": "44290",
+    "population": 670,
+    "nombre_medecins": 0,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.675,
+      "lon": -1.9099
+    }
+  },
+  {
+    "nom_commune": "Mauves-sur-Loire",
+    "code_postal": "44470",
+    "population": 3393,
+    "nombre_medecins": 31,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.3146,
+      "lon": -1.4019
+    }
+  },
+  {
+    "nom_commune": "La Meilleraye-de-Bretagne",
+    "code_postal": "44520",
+    "population": 1587,
+    "nombre_medecins": 0,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.5651,
+      "lon": -1.3918
+    }
+  },
+  {
+    "nom_commune": "Mésanger",
+    "code_postal": "44522",
+    "population": 4681,
+    "nombre_medecins": 34,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.4307,
+      "lon": -1.2324
+    }
+  },
+  {
+    "nom_commune": "Mesquer",
+    "code_postal": "44420",
+    "population": 2156,
+    "nombre_medecins": 0,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.3991,
+      "lon": -2.4693
+    }
+  },
+  {
+    "nom_commune": "Missillac",
+    "code_postal": "44780",
+    "population": 5619,
+    "nombre_medecins": 32,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.489,
+      "lon": -2.1765
+    }
+  },
+  {
+    "nom_commune": "Moisdon-la-Rivière",
+    "code_postal": "44520",
+    "population": 1964,
+    "nombre_medecins": 32,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.6269,
+      "lon": -1.3661
+    }
+  },
+  {
+    "nom_commune": "Monnières",
+    "code_postal": "44690",
+    "population": 2341,
+    "nombre_medecins": 13,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.1202,
+      "lon": -1.35
+    }
+  },
+  {
+    "nom_commune": "La Montagne",
+    "code_postal": "44620",
+    "population": 6523,
+    "nombre_medecins": 67,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.1858,
+      "lon": -1.6826
+    }
+  },
+  {
+    "nom_commune": "Montbert",
+    "code_postal": "44140",
+    "population": 3346,
+    "nombre_medecins": 0,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.0669,
+      "lon": -1.4723
+    }
+  },
+  {
+    "nom_commune": "Montoir-de-Bretagne",
+    "code_postal": "44550",
+    "population": 7289,
+    "nombre_medecins": 9,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.3238,
+      "lon": -2.1539
+    }
+  },
+  {
+    "nom_commune": "Montrelais",
+    "code_postal": "44370",
+    "population": 843,
+    "nombre_medecins": 0,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.4019,
+      "lon": -0.973
+    }
+  },
+  {
+    "nom_commune": "Mouais",
+    "code_postal": "44590",
+    "population": 356,
+    "nombre_medecins": 0,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.7044,
+      "lon": -1.6695
+    }
+  },
+  {
+    "nom_commune": "Les Moutiers-en-Retz",
+    "code_postal": "44760",
+    "population": 1846,
+    "nombre_medecins": 0,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.0552,
+      "lon": -1.9883
+    }
+  },
+  {
+    "nom_commune": "Mouzeil",
+    "code_postal": "44850",
+    "population": 2004,
+    "nombre_medecins": 0,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.4414,
+      "lon": -1.3272
+    }
+  },
+  {
+    "nom_commune": "Mouzillon",
+    "code_postal": "44330",
+    "population": 2903,
+    "nombre_medecins": 0,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.1291,
+      "lon": -1.274
+    }
+  },
+  {
+    "nom_commune": "Nantes",
+    "code_postal": "44000, 44100, 44200, 44300",
+    "population": 325070,
+    "nombre_medecins": 1374,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.2382,
+      "lon": -1.5603
+    }
+  },
+  {
+    "nom_commune": "Nort-sur-Erdre",
+    "code_postal": "44390",
+    "population": 9448,
+    "nombre_medecins": 81,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.4454,
+      "lon": -1.5239
+    }
+  },
+  {
+    "nom_commune": "Notre-Dame-des-Landes",
+    "code_postal": "44130",
+    "population": 2335,
+    "nombre_medecins": 6,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.3812,
+      "lon": -1.7188
+    }
+  },
+  {
+    "nom_commune": "Noyal-sur-Brutz",
+    "code_postal": "44110",
+    "population": 579,
+    "nombre_medecins": 0,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.7756,
+      "lon": -1.3438
+    }
+  },
+  {
+    "nom_commune": "Nozay",
+    "code_postal": "44170",
+    "population": 4280,
+    "nombre_medecins": 38,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.5727,
+      "lon": -1.6027
+    }
+  },
+  {
+    "nom_commune": "Orvault",
+    "code_postal": "44700",
+    "population": 28341,
+    "nombre_medecins": 140,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.2745,
+      "lon": -1.6195
+    }
+  },
+  {
+    "nom_commune": "Oudon",
+    "code_postal": "44521",
+    "population": 3915,
+    "nombre_medecins": 0,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.3532,
+      "lon": -1.2676
+    }
+  },
+  {
+    "nom_commune": "Paimbœuf",
+    "code_postal": "44560",
+    "population": 3030,
+    "nombre_medecins": 4,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.2912,
+      "lon": -2.028
+    }
+  },
+  {
+    "nom_commune": "Le Pallet",
+    "code_postal": "44330",
+    "population": 3374,
+    "nombre_medecins": 9,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.1424,
+      "lon": -1.3464
+    }
+  },
+  {
+    "nom_commune": "Pannecé",
+    "code_postal": "44440",
+    "population": 1454,
+    "nombre_medecins": 0,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.482,
+      "lon": -1.2148
+    }
+  },
+  {
+    "nom_commune": "Paulx",
+    "code_postal": "44270",
+    "population": 2042,
+    "nombre_medecins": 0,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 46.9612,
+      "lon": -1.7835
+    }
+  },
+  {
+    "nom_commune": "Le Pellerin",
+    "code_postal": "44640",
+    "population": 5335,
+    "nombre_medecins": 41,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.2341,
+      "lon": -1.8377
+    }
+  },
+  {
+    "nom_commune": "Petit-Auverné",
+    "code_postal": "44670",
+    "population": 437,
+    "nombre_medecins": 0,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.6091,
+      "lon": -1.2833
+    }
+  },
+  {
+    "nom_commune": "Petit-Mars",
+    "code_postal": "44390",
+    "population": 3865,
+    "nombre_medecins": 0,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.4063,
+      "lon": -1.457
+    }
+  },
+  {
+    "nom_commune": "Pierric",
+    "code_postal": "44290",
+    "population": 1011,
+    "nombre_medecins": 0,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.689,
+      "lon": -1.7816
+    }
+  },
+  {
+    "nom_commune": "Le Pin",
+    "code_postal": "44540",
+    "population": 829,
+    "nombre_medecins": 0,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.5924,
+      "lon": -1.1456
+    }
+  },
+  {
+    "nom_commune": "Piriac-sur-Mer",
+    "code_postal": "44420",
+    "population": 2663,
+    "nombre_medecins": 4,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.3838,
+      "lon": -2.5449
+    }
+  },
+  {
+    "nom_commune": "La Plaine-sur-Mer",
+    "code_postal": "44770",
+    "population": 4617,
+    "nombre_medecins": 14,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.144,
+      "lon": -2.1813
+    }
+  },
+  {
+    "nom_commune": "La Planche",
+    "code_postal": "44140",
+    "population": 2802,
+    "nombre_medecins": 18,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.0244,
+      "lon": -1.4382
+    }
+  },
+  {
+    "nom_commune": "Plessé",
+    "code_postal": "44630",
+    "population": 5281,
+    "nombre_medecins": 29,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.5578,
+      "lon": -1.8831
+    }
+  },
+  {
+    "nom_commune": "Pontchâteau",
+    "code_postal": "44160",
+    "population": 11249,
+    "nombre_medecins": 58,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.4365,
+      "lon": -2.092
+    }
+  },
+  {
+    "nom_commune": "Pont-Saint-Martin",
+    "code_postal": "44860",
+    "population": 6942,
+    "nombre_medecins": 74,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.1266,
+      "lon": -1.5683
+    }
+  },
+  {
+    "nom_commune": "Pornic",
+    "code_postal": "44210",
+    "population": 18382,
+    "nombre_medecins": 69,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.1302,
+      "lon": -2.0569
+    }
+  },
+  {
+    "nom_commune": "Pornichet",
+    "code_postal": "44380",
+    "population": 12530,
+    "nombre_medecins": 81,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.2599,
+      "lon": -2.3225
+    }
+  },
+  {
+    "nom_commune": "Port-Saint-Père",
+    "code_postal": "44710",
+    "population": 3046,
+    "nombre_medecins": 16,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.1383,
+      "lon": -1.7674
+    }
+  },
+  {
+    "nom_commune": "Pouillé-les-Côteaux",
+    "code_postal": "44522",
+    "population": 1050,
+    "nombre_medecins": 0,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.4666,
+      "lon": -1.184
+    }
+  },
+  {
+    "nom_commune": "Le Pouliguen",
+    "code_postal": "44510",
+    "population": 4007,
+    "nombre_medecins": 5,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.2733,
+      "lon": -2.4333
+    }
+  },
+  {
+    "nom_commune": "Préfailles",
+    "code_postal": "44770",
+    "population": 1246,
+    "nombre_medecins": 6,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.133,
+      "lon": -2.2106
+    }
+  },
+  {
+    "nom_commune": "Prinquiau",
+    "code_postal": "44260",
+    "population": 3557,
+    "nombre_medecins": 17,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.3784,
+      "lon": -2.0239
+    }
+  },
+  {
+    "nom_commune": "Puceul",
+    "code_postal": "44390",
+    "population": 1124,
+    "nombre_medecins": 7,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.5142,
+      "lon": -1.6119
+    }
+  },
+  {
+    "nom_commune": "Quilly",
+    "code_postal": "44750",
+    "population": 1541,
+    "nombre_medecins": 0,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.4624,
+      "lon": -1.9438
+    }
+  },
+  {
+    "nom_commune": "La Regrippière",
+    "code_postal": "44330",
+    "population": 1559,
+    "nombre_medecins": 0,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.1837,
+      "lon": -1.1931
+    }
+  },
+  {
+    "nom_commune": "La Remaudière",
+    "code_postal": "44430",
+    "population": 1288,
+    "nombre_medecins": 0,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.2286,
+      "lon": -1.2249
+    }
+  },
+  {
+    "nom_commune": "Remouillé",
+    "code_postal": "44140",
+    "population": 1932,
+    "nombre_medecins": 22,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.0362,
+      "lon": -1.3877
+    }
+  },
+  {
+    "nom_commune": "Rezé",
+    "code_postal": "44400",
+    "population": 43349,
+    "nombre_medecins": 229,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.1733,
+      "lon": -1.5573
+    }
+  },
+  {
+    "nom_commune": "Riaillé",
+    "code_postal": "44440",
+    "population": 2358,
+    "nombre_medecins": 16,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.5209,
+      "lon": -1.3095
+    }
+  },
+  {
+    "nom_commune": "Rouans",
+    "code_postal": "44640",
+    "population": 3272,
+    "nombre_medecins": 20,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.18,
+      "lon": -1.8462
+    }
+  },
+  {
+    "nom_commune": "Rougé",
+    "code_postal": "44660",
+    "population": 2152,
+    "nombre_medecins": 0,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.7673,
+      "lon": -1.4342
+    }
+  },
+  {
+    "nom_commune": "Ruffigné",
+    "code_postal": "44660",
+    "population": 705,
+    "nombre_medecins": 0,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.7662,
+      "lon": -1.5205
+    }
+  },
+  {
+    "nom_commune": "Saffré",
+    "code_postal": "44390",
+    "population": 4075,
+    "nombre_medecins": 0,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.4924,
+      "lon": -1.5807
+    }
+  },
+  {
+    "nom_commune": "Saint-Aignan-Grandlieu",
+    "code_postal": "44860",
+    "population": 3991,
+    "nombre_medecins": 7,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.1296,
+      "lon": -1.6191
+    }
+  },
+  {
+    "nom_commune": "Saint-André-des-Eaux",
+    "code_postal": "44117",
+    "population": 6949,
+    "nombre_medecins": 10,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.3272,
+      "lon": -2.3116
+    }
+  },
+  {
+    "nom_commune": "Sainte-Anne-sur-Brivet",
+    "code_postal": "44160",
+    "population": 3014,
+    "nombre_medecins": 15,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.4541,
+      "lon": -2.0288
+    }
+  },
+  {
+    "nom_commune": "Saint-Aubin-des-Châteaux",
+    "code_postal": "44110",
+    "population": 1749,
+    "nombre_medecins": 0,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.7118,
+      "lon": -1.4674
+    }
+  },
+  {
+    "nom_commune": "Saint-Brevin-les-Pins",
+    "code_postal": "44250",
+    "population": 14645,
+    "nombre_medecins": 70,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.2441,
+      "lon": -2.154
+    }
+  },
+  {
+    "nom_commune": "Saint-Colomban",
+    "code_postal": "44310",
+    "population": 3499,
+    "nombre_medecins": 22,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.0175,
+      "lon": -1.5526
+    }
+  },
+  {
+    "nom_commune": "Corcoué-sur-Logne",
+    "code_postal": "44650",
+    "population": 3209,
+    "nombre_medecins": 7,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 46.958,
+      "lon": -1.6033
+    }
+  },
+  {
+    "nom_commune": "Saint-Étienne-de-Mer-Morte",
+    "code_postal": "44270",
+    "population": 1764,
+    "nombre_medecins": 0,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 46.9464,
+      "lon": -1.7172
+    }
+  },
+  {
+    "nom_commune": "Saint-Étienne-de-Montluc",
+    "code_postal": "44360",
+    "population": 7739,
+    "nombre_medecins": 41,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.2694,
+      "lon": -1.7902
+    }
+  },
+  {
+    "nom_commune": "Saint-Fiacre-sur-Maine",
+    "code_postal": "44690",
+    "population": 1246,
+    "nombre_medecins": 0,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.1419,
+      "lon": -1.4198
+    }
+  },
+  {
+    "nom_commune": "Saint-Gildas-des-Bois",
+    "code_postal": "44530",
+    "population": 3790,
+    "nombre_medecins": 1,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.5099,
+      "lon": -2.0639
+    }
+  },
+  {
+    "nom_commune": "Saint-Herblain",
+    "code_postal": "44800",
+    "population": 50561,
+    "nombre_medecins": 246,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.2246,
+      "lon": -1.6306
+    }
+  },
+  {
+    "nom_commune": "Vair-sur-Loire",
+    "code_postal": "44150",
+    "population": 4890,
+    "nombre_medecins": 32,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.4019,
+      "lon": -1.1095
+    }
+  },
+  {
+    "nom_commune": "Saint-Hilaire-de-Chaléons",
+    "code_postal": "44680",
+    "population": 2376,
+    "nombre_medecins": 0,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.0999,
+      "lon": -1.874
+    }
+  },
+  {
+    "nom_commune": "Saint-Hilaire-de-Clisson",
+    "code_postal": "44190",
+    "population": 2405,
+    "nombre_medecins": 0,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.06,
+      "lon": -1.3182
+    }
+  },
+  {
+    "nom_commune": "Saint-Jean-de-Boiseau",
+    "code_postal": "44640",
+    "population": 6024,
+    "nombre_medecins": 39,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.1919,
+      "lon": -1.7198
+    }
+  },
+  {
+    "nom_commune": "Saint-Joachim",
+    "code_postal": "44720",
+    "population": 4125,
+    "nombre_medecins": 11,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.3731,
+      "lon": -2.2429
+    }
+  },
+  {
+    "nom_commune": "Saint-Julien-de-Concelles",
+    "code_postal": "44450",
+    "population": 7768,
+    "nombre_medecins": 29,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.2469,
+      "lon": -1.4036
+    }
+  },
+  {
+    "nom_commune": "Saint-Julien-de-Vouvantes",
+    "code_postal": "44670",
+    "population": 963,
+    "nombre_medecins": 2,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.6544,
+      "lon": -1.2269
+    }
+  },
+  {
+    "nom_commune": "Saint-Léger-les-Vignes",
+    "code_postal": "44710",
+    "population": 2114,
+    "nombre_medecins": 0,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.1443,
+      "lon": -1.7118
+    }
+  },
+  {
+    "nom_commune": "Sainte-Luce-sur-Loire",
+    "code_postal": "44980",
+    "population": 16227,
+    "nombre_medecins": 100,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.2529,
+      "lon": -1.4704
+    }
+  },
+  {
+    "nom_commune": "Saint-Lumine-de-Clisson",
+    "code_postal": "44190",
+    "population": 2118,
+    "nombre_medecins": 0,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.0795,
+      "lon": -1.3647
+    }
+  },
+  {
+    "nom_commune": "Saint-Lumine-de-Coutais",
+    "code_postal": "44310",
+    "population": 2390,
+    "nombre_medecins": 0,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.0578,
+      "lon": -1.7235
+    }
+  },
+  {
+    "nom_commune": "Saint-Lyphard",
+    "code_postal": "44410",
+    "population": 5246,
+    "nombre_medecins": 10,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.3788,
+      "lon": -2.3437
+    }
+  },
+  {
+    "nom_commune": "Saint-Malo-de-Guersac",
+    "code_postal": "44550",
+    "population": 3221,
+    "nombre_medecins": 23,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.3608,
+      "lon": -2.173
+    }
+  },
+  {
+    "nom_commune": "Saint-Mars-de-Coutais",
+    "code_postal": "44680",
+    "population": 2644,
+    "nombre_medecins": 10,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.0779,
+      "lon": -1.7457
+    }
+  },
+  {
+    "nom_commune": "Saint-Mars-du-Désert",
+    "code_postal": "44850",
+    "population": 5435,
+    "nombre_medecins": 36,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.3537,
+      "lon": -1.4369
+    }
+  },
+  {
+    "nom_commune": "Vallons-de-l'Erdre",
+    "code_postal": "44540",
+    "population": 6625,
+    "nombre_medecins": 14,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.5349,
+      "lon": -1.1414
+    }
+  },
+  {
+    "nom_commune": "Saint-Michel-Chef-Chef",
+    "code_postal": "44730",
+    "population": 5520,
+    "nombre_medecins": 40,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.1705,
+      "lon": -2.1238
+    }
+  },
+  {
+    "nom_commune": "Saint-Molf",
+    "code_postal": "44350",
+    "population": 2859,
+    "nombre_medecins": 29,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.3862,
+      "lon": -2.4139
+    }
+  },
+  {
+    "nom_commune": "Saint-Nazaire",
+    "code_postal": "44600",
+    "population": 73111,
+    "nombre_medecins": 504,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.2768,
+      "lon": -2.2392
+    }
+  },
+  {
+    "nom_commune": "Saint-Nicolas-de-Redon",
+    "code_postal": "44460",
+    "population": 3304,
+    "nombre_medecins": 4,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.6364,
+      "lon": -2.0522
+    }
+  },
+  {
+    "nom_commune": "Sainte-Pazanne",
+    "code_postal": "44680",
+    "population": 7209,
+    "nombre_medecins": 35,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.0864,
+      "lon": -1.8184
+    }
+  },
+  {
+    "nom_commune": "Saint-Père-en-Retz",
+    "code_postal": "44320",
+    "population": 4701,
+    "nombre_medecins": 38,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.2379,
+      "lon": -2.0714
+    }
+  },
+  {
+    "nom_commune": "Saint-Philbert-de-Grand-Lieu",
+    "code_postal": "44310",
+    "population": 9392,
+    "nombre_medecins": 52,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.0689,
+      "lon": -1.6443
+    }
+  },
+  {
+    "nom_commune": "Sainte-Reine-de-Bretagne",
+    "code_postal": "44160",
+    "population": 2447,
+    "nombre_medecins": 6,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.4421,
+      "lon": -2.1838
+    }
+  },
+  {
+    "nom_commune": "Saint-Sébastien-sur-Loire",
+    "code_postal": "44230",
+    "population": 28373,
+    "nombre_medecins": 152,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.2065,
+      "lon": -1.5023
+    }
+  },
+  {
+    "nom_commune": "Saint-Viaud",
+    "code_postal": "44320",
+    "population": 2846,
+    "nombre_medecins": 8,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.2418,
+      "lon": -1.987
+    }
+  },
+  {
+    "nom_commune": "Saint-Vincent-des-Landes",
+    "code_postal": "44590",
+    "population": 1527,
+    "nombre_medecins": 8,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.6606,
+      "lon": -1.5026
+    }
+  },
+  {
+    "nom_commune": "Sautron",
+    "code_postal": "44880",
+    "population": 8534,
+    "nombre_medecins": 42,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.275,
+      "lon": -1.6839
+    }
+  },
+  {
+    "nom_commune": "Savenay",
+    "code_postal": "44260",
+    "population": 9465,
+    "nombre_medecins": 106,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.3542,
+      "lon": -1.9203
+    }
+  },
+  {
+    "nom_commune": "Sévérac",
+    "code_postal": "44530",
+    "population": 1693,
+    "nombre_medecins": 0,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.5534,
+      "lon": -2.0656
+    }
+  },
+  {
+    "nom_commune": "Sion-les-Mines",
+    "code_postal": "44590",
+    "population": 1658,
+    "nombre_medecins": 0,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.7274,
+      "lon": -1.5762
+    }
+  },
+  {
+    "nom_commune": "Les Sorinières",
+    "code_postal": "44840",
+    "population": 9163,
+    "nombre_medecins": 57,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.142,
+      "lon": -1.5195
+    }
+  },
+  {
+    "nom_commune": "Soudan",
+    "code_postal": "44110",
+    "population": 1965,
+    "nombre_medecins": 3,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.7262,
+      "lon": -1.2871
+    }
+  },
+  {
+    "nom_commune": "Soulvache",
+    "code_postal": "44660",
+    "population": 339,
+    "nombre_medecins": 0,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.8205,
+      "lon": -1.4482
+    }
+  },
+  {
+    "nom_commune": "Sucé-sur-Erdre",
+    "code_postal": "44240",
+    "population": 7457,
+    "nombre_medecins": 42,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.35,
+      "lon": -1.5237
+    }
+  },
+  {
+    "nom_commune": "Teillé",
+    "code_postal": "44440",
+    "population": 1820,
+    "nombre_medecins": 5,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.4654,
+      "lon": -1.2838
+    }
+  },
+  {
+    "nom_commune": "Le Temple-de-Bretagne",
+    "code_postal": "44360",
+    "population": 2005,
+    "nombre_medecins": 9,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.3299,
+      "lon": -1.7892
+    }
+  },
+  {
+    "nom_commune": "Thouaré-sur-Loire",
+    "code_postal": "44470",
+    "population": 10956,
+    "nombre_medecins": 127,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.2755,
+      "lon": -1.4294
+    }
+  },
+  {
+    "nom_commune": "Les Touches",
+    "code_postal": "44390",
+    "population": 2619,
+    "nombre_medecins": 0,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.4552,
+      "lon": -1.4166
+    }
+  },
+  {
+    "nom_commune": "Touvois",
+    "code_postal": "44650",
+    "population": 1936,
+    "nombre_medecins": 4,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 46.9098,
+      "lon": -1.685
+    }
+  },
+  {
+    "nom_commune": "Trans-sur-Erdre",
+    "code_postal": "44440",
+    "population": 1124,
+    "nombre_medecins": 0,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.4854,
+      "lon": -1.3597
+    }
+  },
+  {
+    "nom_commune": "Treffieux",
+    "code_postal": "44170",
+    "population": 976,
+    "nombre_medecins": 0,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.614,
+      "lon": -1.5281
+    }
+  },
+  {
+    "nom_commune": "Treillières",
+    "code_postal": "44119",
+    "population": 10414,
+    "nombre_medecins": 36,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.3146,
+      "lon": -1.6312
+    }
+  },
+  {
+    "nom_commune": "Trignac",
+    "code_postal": "44570",
+    "population": 8234,
+    "nombre_medecins": 43,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.3116,
+      "lon": -2.2052
+    }
+  },
+  {
+    "nom_commune": "La Turballe",
+    "code_postal": "44420",
+    "population": 4862,
+    "nombre_medecins": 29,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.3402,
+      "lon": -2.4906
+    }
+  },
+  {
+    "nom_commune": "Vallet",
+    "code_postal": "44330",
+    "population": 9524,
+    "nombre_medecins": 112,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.1763,
+      "lon": -1.2645
+    }
+  },
+  {
+    "nom_commune": "Loireauxence",
+    "code_postal": "44370",
+    "population": 7509,
+    "nombre_medecins": 0,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.4352,
+      "lon": -1.0319
+    }
+  },
+  {
+    "nom_commune": "Vay",
+    "code_postal": "44170",
+    "population": 2084,
+    "nombre_medecins": 0,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.5381,
+      "lon": -1.7031
+    }
+  },
+  {
+    "nom_commune": "Vertou",
+    "code_postal": "44120",
+    "population": 26048,
+    "nombre_medecins": 213,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.1532,
+      "lon": -1.4679
+    }
+  },
+  {
+    "nom_commune": "Vieillevigne",
+    "code_postal": "44116",
+    "population": 4110,
+    "nombre_medecins": 0,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 46.9702,
+      "lon": -1.4172
+    }
+  },
+  {
+    "nom_commune": "Vigneux-de-Bretagne",
+    "code_postal": "44360",
+    "population": 6633,
+    "nombre_medecins": 30,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.317,
+      "lon": -1.7198
+    }
+  },
+  {
+    "nom_commune": "Villepot",
+    "code_postal": "44110",
+    "population": 687,
+    "nombre_medecins": 0,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.7686,
+      "lon": -1.2856
+    }
+  },
+  {
+    "nom_commune": "Vue",
+    "code_postal": "44640",
+    "population": 1716,
+    "nombre_medecins": 0,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.1996,
+      "lon": -1.8968
+    }
+  },
+  {
+    "nom_commune": "La Chevallerais",
+    "code_postal": "44810",
+    "population": 1559,
+    "nombre_medecins": 0,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.4774,
+      "lon": -1.6658
+    }
+  },
+  {
+    "nom_commune": "La Roche-Blanche",
+    "code_postal": "44522",
+    "population": 1258,
+    "nombre_medecins": 0,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.435,
+      "lon": -1.1413
+    }
+  },
+  {
+    "nom_commune": "Geneston",
+    "code_postal": "44140",
+    "population": 3691,
+    "nombre_medecins": 44,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.0579,
+      "lon": -1.5312
+    }
+  },
+  {
+    "nom_commune": "La Grigonnais",
+    "code_postal": "44170",
+    "population": 1815,
+    "nombre_medecins": 0,
+    "ratio": null,
+    "coordonnees": {
+      "lat": 47.5208,
+      "lon": -1.687
+    }
+  }
+]
