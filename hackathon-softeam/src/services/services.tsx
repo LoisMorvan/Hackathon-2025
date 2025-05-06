@@ -35,3 +35,21 @@ export const getCommuneInfo = async (value?: string) => {
     throw error;
   }
 };
+
+/**
+ * Récupère les établissements pour une commune donnée.
+ * @param commune Nom de la commune.
+ * @param categorie Catégorie d'établissement (facultatif, par défaut "Maison de santé (L.6223-3)").
+ * @returns Liste des établissements.
+ */
+export const getEtablissements = async (commune: string, categorie?: string) => {
+    try {
+      const response = await axios.get(`${API_BASE_URL}/etablissements`, {
+        params: { commune, categorie },
+      });
+      return response.data;
+    } catch (error) {
+      console.error("Erreur lors de la récupération des établissements:", error);
+      throw error;
+    }
+};

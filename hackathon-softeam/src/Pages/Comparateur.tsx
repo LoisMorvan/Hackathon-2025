@@ -1,14 +1,17 @@
-import React from 'react';
-
+import React, { useState } from 'react';
 import Navbar from '../components/Navbar';
-import ApexChart from '../components/column-chart-comparateur';
+import ZoneRecherche from '../components/zoneRechercheComparateur';
 
 const Comparateur: React.FC = () => {
   return (
     <div>
       <Navbar />
       <main style={{ marginTop: '100px' }}>
-        <ApexChart />
+        <div style={{ display: 'flex', justifyContent: 'space-around', marginBottom: '50px' }}>
+          <div>
+            <ZoneRecherche />
+          </div>
+        </div>
       </main>
       <Footer />
     </div>
@@ -16,9 +19,9 @@ const Comparateur: React.FC = () => {
 };
 
 const Footer = () => (
-    <footer>
-      <p>HACKATON - 2025 - SOFTEAM</p>
-    </footer>
-  );
+  <footer>
+    <p>HACKATON - 2025 - SOFTEAM</p>
+  </footer>
+);
 
 export default Comparateur;

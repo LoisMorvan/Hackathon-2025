@@ -1,28 +1,38 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import ReactApexChart from "react-apexcharts";
 import { ApexOptions } from "apexcharts";
 
-type SeriesType = ApexAxisChartSeries;
+interface ApexChartProps {
+  ville1: any[];
+  ville2: any[];
+}
 
-const ApexChart: React.FC = () => {
-  
+const ApexChart: React.FC<ApexChartProps> = ({ ville1, ville2 }) => {
   const categories = ["Commerce", "Transport", "Scolarité"];
-  const ville1 = [3, 0, 2];
-  const ville2 = [6, 4, 1];
+  const [ville1Data, setVille1Data] = useState<number[]>([0, 0, 0]);
+  const [ville2Data, setVille2Data] = useState<number[]>([0, 0, 0]);
   const ideal = [8, 3, 4];
 
-  const [chartData] = useState<{
-    series: SeriesType;
-    options: ApexOptions;
-  }>( {
+  useEffect(() => {
+    if (ville1) {
+      // Simule les données pour Ville 1
+      setVille1Data([3, 0, 2]); // Remplace par des données dynamiques si nécessaire
+    }
+    if (ville2) {
+      // Simule les données pour Ville 2
+      setVille2Data([6, 4, 1]); // Remplace par des données dynamiques si nécessaire
+    }
+  }, [ville1, ville2]);
+
+  const chartData = {
     series: [
-      { name: "Ville 1", data: ville1 },
-      { name: "Ville 2", data: ville2 },
+      { name: "Ville 1", data: ville1Data },
+      { name: "Ville 2", data: ville2Data },
       { name: "Idéal", data: ideal },
     ],
     options: {
       chart: {
-        type: "bar",
+        type: "bar", // Type de graphique
         height: 350,
       },
       plotOptions: {
@@ -30,33 +40,7 @@ const ApexChart: React.FC = () => {
           horizontal: false,
           columnWidth: "55%",
           borderRadius: 5,
-          borderRadiusApplication: "end",
-          distributed: false,
         },
-      },
-      dataLabels: {
-        enabled: true,
-        formatter: function (val: number, opts: any) {
-          const seriesIndex = opts.seriesIndex;
-          const dataPointIndex = opts.dataPointIndex;
-          const idealVal = ideal[dataPointIndex];
-        
-          if (seriesIndex === 0 || seriesIndex === 1) {
-            return val > idealVal ? "✓" : "✗";
-          }
-        
-          return "";
-        },
-        style: {
-          fontSize: "18px",
-          colors: ["#000"],
-        },
-        offsetY: -10,
-      },
-      stroke: {
-        show: true,
-        width: 2,
-        colors: ["transparent"],
       },
       xaxis: {
         categories: categories,
@@ -66,29 +50,8 @@ const ApexChart: React.FC = () => {
           text: "Nb de services",
         },
       },
-      fill: {
-        opacity: 1,
-        colors: [
-          function ({ seriesIndex }: { seriesIndex: number; dataPointIndex: number }) {
-            if (seriesIndex === 0) return "#008FFB"; // bleu pour "Idéal"
-            if (seriesIndex === 1) return "#FFA500"; // orange pour "Idéal"
-            if (seriesIndex === 2) return "#3A9D23"; // vert pour "Idéal"
-          },
-        ] as NonNullable<ApexOptions["fill"]>["colors"],
-      },
-      tooltip: {
-        y: {
-          formatter: (
-            val: number,
-            { dataPointIndex }: { seriesIndex: number; dataPointIndex: number }
-          ): string => {
-            const category = categories[dataPointIndex];
-            return `${val} ${category}`;
-          },
-        },
-      },
-    },
-  });
+    } as ApexOptions, // Ajout explicite du type ApexOptions
+  };
 
   return (
     <div style={{ display: "flex", justifyContent: "center" }}>
