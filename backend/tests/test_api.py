@@ -1,5 +1,3 @@
-# === test_api.py ===
-
 import json
 import pytest
 import requests
@@ -63,6 +61,7 @@ mock_etablissements = {
 def test_index():
     response = client.get("/")
     assert response.status_code == 200
+    assert "message" in response.json()
 
 # === Communes ===
 
@@ -78,8 +77,6 @@ def test_get_communes_by_name():
     response = client.get("/communes?value=Nantes")
     assert response.status_code == 200
     assert any("Nantes" in c["nom"] for c in response.json())
-
-# === Commune info ===
 
 
 @patch("builtins.open", new_callable=mock_open, read_data=sample_data)
@@ -97,8 +94,6 @@ def test_commune_info_by_name(mock_exists, mock_file):
     response = client.get("/commune-info?value=nantes")
     assert response.status_code == 200
     assert response.json()["nom_commune"].lower() == "nantes"
-
-# === Couvertures (si implémenté) ===
 
 
 @patch("builtins.open", new_callable=mock_open, read_data=sample_data1)
@@ -127,8 +122,6 @@ def test_get_couvertures_empty_file(mock_exists, mock_file):
     response = client.get("/couvertures")
     assert response.status_code == 200
     assert response.json() == {"message": "Aucune commune trouvée."}
-
-# === Écoles ===
 
 
 @patch("requests.get")
@@ -166,8 +159,6 @@ def test_ecoles_stats_api_error(mock_get):
     assert response.json() == {
         "detail": "Erreur lors de la récupération des données"}
 
-# === Établissements ===
-
 
 @patch("requests.get")
 def test_get_etablissements_success(mock_get):
@@ -193,3 +184,43 @@ def test_get_etablissements_api_failure(mock_get):
 def test_get_etablissements_missing_param():
     response = client.get("/etablissements")
     assert response.status_code == 422
+
+# === Services: médecins ===
+
+
+@patch("requests.get")
+def test_compteur_medecin_with_commune(mock_get):
+    mock_get.return_value = Mock(status_code=200, json=lambda: {"nhits": 42})
+    from services.medecins import compteur_medecin
+    assert compteur_medecin("Nantes") == 42
+
+
+@patch("requests.get")
+def test_compteur_medecin_without_commune(mock_get):
+    mock_get.return_value = Mock(status_code=200, json=lambda: {"nhits": 15})
+    from services.medecins import compteur_medecin
+    assert compteur_medecin() == 15
+
+
+@patch("requests.get", side_effect=requests.exceptions.RequestException("Erreur réseau"))
+def test_compteur_medecin_exception(mock_get):
+    from services.medecins import compteur_medecin
+    assert compteur_medecin("Atlantis") == 0
+
+# === POST admin update commune (mocké) ===
+
+
+@patch("routes.communes.update_commune_info_file")
+def test_post_update_commune(mock_update):
+    response = client.post("/admin/update-commune-info")
+    assert response.status_code == 200
+    assert response.json() == {
+        "message": "Fichier communes_info.json mis à jour avec succès."}
+    mock_update.assert_called_once()
+
+
+@patch("routes.communes.update_commune_info_file", side_effect=Exception("fail"))
+def test_post_update_commune_error(mock_update):
+    response = client.post("/admin/update-commune-info")
+    assert response.status_code == 500
+    assert "Erreur lors de la mise à jour" in response.json()["detail"]
