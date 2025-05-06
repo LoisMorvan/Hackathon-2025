@@ -1,6 +1,6 @@
 import React from 'react';
-import Navbar from './Navbar';
-import ApexChart from './components/column-chart';
+import Navbar from '../Navbar';
+import ApexChart from '../components/column-chart-comparateur';
 
 const Comparateur: React.FC = () => {
   return (

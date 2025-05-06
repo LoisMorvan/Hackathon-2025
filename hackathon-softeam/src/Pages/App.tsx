@@ -1,7 +1,7 @@
 
-import './App.css';
-import Navbar from './Navbar';
-import CityTable from './CityTable';
+import '../App.css';
+import Navbar from '../Navbar';
+import CityTable from '../CityTable';
 
 function App() {
   return (
