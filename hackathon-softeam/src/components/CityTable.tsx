@@ -27,7 +27,7 @@ const CityTable: React.FC = () => {
       try {
         const response = await axios.get<Commune[]>('http://localhost:8000/commune-info');
         setCommunes(response.data);
-        setFilteredCommunes(response.data); // Initialize filteredCommunes with all data
+        setFilteredCommunes(response.data); 
         setLoading(false);
       } catch (err) {
         setError('Erreur lors de la récupération des données.');
@@ -65,18 +65,32 @@ const CityTable: React.FC = () => {
     setSelectedCommunes(updatedSelectedCommunes);
   };
 
-  if (loading) {
-    return <p>Chargement des données...</p>;
-  }
 
-  if (error) {
-    return <p>{error}</p>;
-  }
+
+  const handleRemoveFromComparison = (communeName: string) => {
+    
+    const updatedSelectedCommunes = selectedCommunes.filter(
+      (commune) => commune.nom_commune !== communeName
+    );
+    setSelectedCommunes(updatedSelectedCommunes);
+    };
+
+    if (loading) {
+      return <p>Chargement des données...</p>;
+    }
+
+    if (error) {
+      return <p>{error}</p>;
+    }
 
   return (
     <div className="city-table-container">
       {/* Zone de recherche */}
-      <ZoneRecherche onSearch={handleSearch} onSelect={handleSelect} />
+      <ZoneRecherche
+        onSearch={handleSearch}
+        onSelect={handleSelect}
+        onRemove={handleRemoveFromComparison} 
+      />
 
       {/* Tableau des villes comparées */}
       {selectedCommunes.length > 0 && (
@@ -96,7 +110,7 @@ const CityTable: React.FC = () => {
               {selectedCommunes.map((commune, index) => {
                 const ratio = commune.nombre_medecins > 0
                   ? ((commune.nombre_medecins / commune.population) * 1000).toFixed(2)
-                  : 'N/A';
+                  : 0;
 
                 const getBackgroundColor = (ratio: string | number) => {
                   if (ratio === 'N/A') return '#f2f2f2'; 
