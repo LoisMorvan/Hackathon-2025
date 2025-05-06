@@ -1,0 +1,22 @@
+[
+  {
+    "position": {
+      "lat": 47.2,
+      "lon": -1.55
+    },
+    "code_postal_uai": "44000",
+    "adresse_uai": "1 rue de l'école",
+    "denomination_principale": "École Élémentaire Jules Ferry",
+    "libelle_commune": "Nantes"
+  },
+  {
+    "position": {
+      "lat": 47.2,
+      "lon": -1.56
+    },
+    "code_postal_uai": "44000",
+    "adresse_uai": "2 avenue du lycée",
+    "denomination_principale": "LYCEE Clémenceau",
+    "libelle_commune": "Nantes"
+  }
+]

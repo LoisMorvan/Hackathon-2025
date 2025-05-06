@@ -1,0 +1,47 @@
+# === ENVIRONNEMENT PYTHON ===
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+
+# === ENVIRONNEMENT VIRTUEL ===
+.venv/
+venv/
+ENV/
+env/
+
+# === CONFIGURATION DE L'IDE ===
+.vscode/
+.idea/
+*.swp
+
+# === LOGS / TEMPORAIRES ===
+*.log
+logs/
+*.tmp
+
+# === FICHIERS PYTHON COMPILES ===
+*.egg-info/
+*.egg
+dist/
+build/
+
+# === DATABASE / JSON DYNAMIQUE ===
+*.sqlite3
+communes_info.json
+
+# === SYSTEME ===
+.DS_Store
+Thumbs.db
+
+# === TEST / COVERAGE ===
+.coverage
+htmlcov/
+.cache/
+.tox/
+pytest_cache/
+
+# === FICHIERS D’EXPORT ===
+*.zip
+*.tar.gz
