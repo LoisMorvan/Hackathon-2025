@@ -47,14 +47,14 @@ const CityTable: React.FC = () => {
   };
 
   const handleSelect = (selected: { nom: string }[]) => {
-    // Trouver les communes sélectionnées dans la liste des communes existantes
+    
     const selectedDetails = selected
       .map((selectedCommune) =>
         communes.find((commune) => commune.nom_commune === selectedCommune.nom)
       )
       .filter((commune): commune is Commune => commune !== undefined);
 
-    // Ajouter les communes sélectionnées sans doublons
+   
     const updatedSelectedCommunes = [...selectedCommunes];
     selectedDetails.forEach((commune) => {
       if (!updatedSelectedCommunes.some((c) => c.nom_commune === commune.nom_commune)) {
@@ -99,11 +99,11 @@ const CityTable: React.FC = () => {
                   : 'N/A';
 
                 const getBackgroundColor = (ratio: string | number) => {
-                  if (ratio === 'N/A') return '#f2f2f2'; // Gris clair pour les valeurs non applicables
+                  if (ratio === 'N/A') return '#f2f2f2'; 
                   const numericRatio = parseFloat(ratio as string);
-                  if (numericRatio < 2) return '#ffcccc'; // Rouge clair pour les ratios faibles
-                  if (numericRatio < 3.3) return '#fff5cc'; // Jaune clair pour les ratios moyens
-                  return '#ccffcc'; // Vert clair pour les ratios élevés
+                  if (numericRatio < 2) return '#ffcccc'; 
+                  if (numericRatio < 3.3) return '#fff5cc'; 
+                  return '#ccffcc'; 
                 };
 
                 return (
@@ -121,7 +121,7 @@ const CityTable: React.FC = () => {
         </div>
       )}
 
-      {/* Tableau des communes */}
+     {/* Liste des villes */}
       <h2>Liste complète</h2>
       <table className="city-table">
         <thead>
@@ -138,7 +138,7 @@ const CityTable: React.FC = () => {
             .sort((a, b) => {
               const ratioA = a.nombre_medecins > 0 ? a.population / a.nombre_medecins : Infinity;
               const ratioB = b.nombre_medecins > 0 ? b.population / b.nombre_medecins : Infinity;
-              return ratioB - ratioA; // Trier par ratio décroissant
+              return ratioB - ratioA; 
             })
             .map((commune, index) => {
               const ratio = commune.nombre_medecins > 0
@@ -146,11 +146,11 @@ const CityTable: React.FC = () => {
                 : 0;
 
               const getBackgroundColor = (ratio: string | number) => {
-                if (ratio === 'N/A') return '#f2f2f2'; // Gris clair pour les valeurs non applicables
+                if (ratio === 'N/A') return '#f2f2f2'; 
                 const numericRatio = parseFloat(ratio as string);
-                if (numericRatio < 2) return '#ffcccc'; // Rouge clair pour les ratios faibles
-                if (numericRatio < 3.3) return '#fff5cc'; // Jaune clair pour les ratios moyens
-                return '#ccffcc'; // Vert clair pour les ratios élevés
+                if (numericRatio < 2) return '#ffcccc'; 
+                if (numericRatio < 3.3) return '#fff5cc'; 
+                return '#ccffcc'; 
               };
 
               return (
