@@ -2,6 +2,9 @@ import React, { useState, useRef, useEffect } from 'react';
 import { getCommunes, getCommuneInfo, getEtablissements, getEcolesStats } from "../services/services";
 import ApexChart from './column-chart-comparateur'; // Import du composant du graphe
 import '../styles/zoneRecherche.css';
+import { Cartehabitant } from '../components/CarteStatistique';
+import { CarteMedecin } from '../components/CarteMedecin';
+import { CarteEtablissement } from '../components/CarteEtablissement';
 
 type Commune = { nom: string };
 
@@ -96,6 +99,14 @@ const ZoneRecherche = () => {
         noms2.map(nom => getEcolesStats(nom))
       );
   
+      console.log("Informations des communes pour Zone 1 :", communeInfo1);
+      console.log("Établissements pour Zone 1 :", etablissements1);
+      console.log("Écoles pour Zone 1 :", ecoles1);
+  
+      console.log("Informations des communes pour Zone 2 :", communeInfo2);
+      console.log("Établissements pour Zone 2 :", etablissements2);
+      console.log("Écoles pour Zone 2 :", ecoles2);
+  
       // Mise à jour des données du graphe
       setChartData({
         communeInfo1,
@@ -173,14 +184,44 @@ const ZoneRecherche = () => {
       {/* Affichage du graphe si les données sont disponibles */}
       {chartData && (
         <div style={{ marginTop: '50px' }}>
-          <ApexChart
+            <ApexChart
             ville1={chartData.communeInfo1}
             ville2={chartData.communeInfo2}
             ecoles1={chartData.ecoles1}
             ecoles2={chartData.ecoles2}
-          />
+            />
+
+            {/* Calcul des totaux pour la Zone 1 */}
+            <h3>Zone 1 : {chartData.communeInfo1.map(c => c.nom_commune).join(", ")}</h3>
+            <Cartehabitant
+            title="Habitants"
+            value={chartData.communeInfo1.reduce((sum, c) => sum + (c.population || 0), 0).toLocaleString()}
+            />
+            <CarteMedecin
+            region="Médecins / 1000 habitants"
+            medecinsParHabitant={chartData.communeInfo1.reduce((sum, c) => sum + (c.ratio || 0), 0)}
+            />
+            <CarteEtablissement
+            region="Établissements de santé"
+            nombreEtablissements={chartData.etablissements1.reduce((sum, e) => sum + (e.etablissements?.length || 0), 0)}
+            />
+
+            {/* Calcul des totaux pour la Zone 2 */}
+            <h3>Zone 2 : {chartData.communeInfo2.map(c => c.nom_commune).join(", ")}</h3>
+            <Cartehabitant
+            title="Habitants"
+            value={chartData.communeInfo2.reduce((sum, c) => sum + (c.population || 0), 0).toLocaleString()}
+            />
+            <CarteMedecin
+            region="Médecins / 1000 habitants"
+            medecinsParHabitant={chartData.communeInfo2.reduce((sum, c) => sum + (c.ratio || 0), 0)}
+            />
+            <CarteEtablissement
+            region="Établissements de santé"
+            nombreEtablissements={chartData.etablissements2.reduce((sum, e) => sum + (e.etablissements?.length || 0), 0)}
+            />
         </div>
-      )}
+        )}
     </div>
   );
 };

@@ -1,0 +1,53 @@
+.couverture-cards {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    margin-bottom: 20px;
+  }
+  
+  .couverture-card {
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .couverture-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .couverture-card p {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .couverture-card.bonne {
+    background-color: #2ecc71;
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  .couverture-card.moyenne {
+    background-color: #f1c40f;
+    color: white;
+  }
+  
+  .couverture-card.sous-dote {
+    background-color: #e74c3c;
+    color: white;
+  }
+  
+  .error-message {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
