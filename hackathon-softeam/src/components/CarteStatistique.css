@@ -1,0 +1,24 @@
+.stat-card {
+    background-color: #ff7f70;
+    color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    width: fit-content;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .stat-title {
+    font-size: 0.75rem;
+    font-weight: bold;
+    opacity: 0.9;
+    letter-spacing: 0.05em;
+  }
+  
+  .stat-value {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-top: 0.25rem;
+  }
+  
