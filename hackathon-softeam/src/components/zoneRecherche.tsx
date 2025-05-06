@@ -3,11 +3,12 @@ import { getCommunes } from "../services/services";
 import '../styles/zoneRecherche.css';
 
 interface ZoneRechercheProps {
-  onSearch?: (searchTerm: string) => void; // Transmet le terme de recherche au parent
-  onSelect?: (selectedCommunes: { nom: string }[]) => void; // Transmet les villes sélectionnées au parent
+  onSearch?: (searchTerm: string) => void; 
+  onSelect?: (selectedCommunes: { nom: string }[]) => void; 
+  onRemove?: (communeName: string) => void; // Ajout de la prop onRemove
 }
 
-const ZoneRecherche: React.FC<ZoneRechercheProps> = ({ onSearch, onSelect }) => {
+const ZoneRecherche: React.FC<ZoneRechercheProps> = ({ onSearch, onSelect, onRemove }) => { // Ajout de onRemove ici
   const [inputValue, setInputValue] = useState('');
   const [suggestions, setSuggestions] = useState<{ nom: string }[]>([]);
   const [selectedList, setSelectedList] = useState<{ nom: string }[]>([]);
@@ -58,8 +59,8 @@ const ZoneRecherche: React.FC<ZoneRechercheProps> = ({ onSearch, onSelect }) => 
     setSelectedList(updatedList);
 
     // Transmet les villes sélectionnées au parent
-    if (onSelect) {
-      onSelect(updatedList);
+    if (onRemove) {
+      onRemove(commune.nom); // Correction de "comune" en "commune"
     }
   };
 
