@@ -1,0 +1,96 @@
+.zone-recherche {
+  position: relative;
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+.selected-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 4px;
+  z-index: 1;
+  position: relative;
+}
+
+.zone-recherche-form {
+  display: flex;
+  gap: 10px;
+  position: relative;
+}
+
+.input-recherche {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.btn-recherche {
+  padding: 10px 16px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-recherche:hover {
+  background-color: #1e40af;
+}
+
+.suggestions {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  border: 1px solid #ccc;
+  background-color: white;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 9999;
+  border-radius: 4px;
+  margin-top: 4px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.suggestion-item {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.suggestion-item:hover {
+  background-color: #f0f0f0;
+}
+
+.suggestion-item.selected {
+  background-color: #bfdbfe;
+  font-weight: bold;
+}
+
+.selected-tag {
+  background-color: #e0e7ff;
+  color: #1e3a8a;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.selected-tag button {
+  background: none;
+  border: none;
+  color: #1e3a8a;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
