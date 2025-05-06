@@ -1,16 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import ZoneRecherche from './components/zoneRecherche';
 
+import './App.css';
+import Navbar from './Navbar';
+import CityTable from './CityTable';
 
 function App() {
   return (
-    <div>
-      <h1>Ma recherche de communes</h1>
-      <ZoneRecherche />
+    <div lang="fr">
+      <Navbar /> 
+      <main> 
+        <CityTable />
+      </main>
+      <Footer />
     </div>
   );
 }
 
+
+
+
+
+
+
+const Footer = () => (
+  <footer>
+    <p>HACKATON - 2025 - SOFTEAM</p>
+  </footer>
+);
+
 export default App;
+

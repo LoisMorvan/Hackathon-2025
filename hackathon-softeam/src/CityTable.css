@@ -1,0 +1,34 @@
+.city-table-container {
+    margin: 20px auto;
+    max-width: 90%;
+    text-align: center;
+  }
+  
+  .city-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .city-table th, .city-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .city-table th {
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+  }
+  
+  .city-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .city-table tr:hover {
+    background-color: #ddd;
+  }
+  
+  .city-table td {
+    text-align: center;
+  }
