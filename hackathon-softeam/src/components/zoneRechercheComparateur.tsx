@@ -29,6 +29,8 @@ const ZoneRecherche = () => {
     ecoles2: any[];
   } | null>(null);
 
+  const [isLoading, setIsLoading] = useState<boolean>(false);
+
   useEffect(() => {
     getCommunes()
       .then((data) => setCommunes(data))
@@ -73,6 +75,8 @@ const ZoneRecherche = () => {
 
   const handleRecherche = async () => {
     try {
+      setIsLoading(true);  
+
       const noms1 = selectedList1.map(c => c.nom);
       const noms2 = selectedList2.map(c => c.nom);
   
@@ -108,6 +112,8 @@ const ZoneRecherche = () => {
     } catch (error) {
       console.error("Erreur lors de la recherche :", error);
       alert("Une erreur est survenue lors de la recherche.");
+    } finally {
+      setIsLoading(false); 
     }
   };
 
@@ -169,6 +175,7 @@ const ZoneRecherche = () => {
       {renderZone(2, inputValue2, suggestions2, selectedList2)}
 
       <button onClick={handleRecherche} className="btn-recherche">Rechercher</button>
+      {isLoading && <p>Chargement des données en cours...</p>}
 
       {/* Affichage du graphe si les données sont disponibles */}
       {chartData && (
