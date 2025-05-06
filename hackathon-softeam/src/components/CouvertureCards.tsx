@@ -39,7 +39,7 @@ const CouvertureCards: React.FC = () => {
 
   return (
     <div>
-      <h1>Pourcentages de couverture médicale des communes du Loire-Atlantique</h1>
+      <h1>Pourcentages de couverture médicale des communes de la Loire-Atlantique</h1>
       <div className="couverture-cards">
         <div className="couverture-card bonne">
           <h3>Bonne Couverture</h3>
