@@ -2,6 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from routes import index, communes, etablissements,couverture,ecole
 
+
 app = FastAPI(
     title="API Communes 44",
     description="API de recherche de communes en Loire-Atlantique 🐌",
