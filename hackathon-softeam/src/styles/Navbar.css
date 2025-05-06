@@ -13,11 +13,7 @@
     text-shadow: 0 0 0px rgba(0, 0, 0, 0.5);
     color: white;
     font-size: 16px;
-    background: linear-gradient(
-        90deg,
-        rgba(0, 0, 0, 0.8),
-        rgba(0, 0, 0, 0.5)
-    ); /* Gradient noir transparent */
+    background: cadetblue;
     z-index: 20;
   }
   

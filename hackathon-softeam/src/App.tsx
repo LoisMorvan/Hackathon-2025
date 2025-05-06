@@ -1,13 +1,15 @@
 
 import './App.css';
-import Navbar from './Navbar';
-import CityTable from './CityTable';
+import Navbar from './components/Navbar';
+import CityTable from './components/CityTable';
+import ZoneRecherche from './components/zoneRecherche';
 
 function App() {
   return (
     <div lang="fr">
       <Navbar /> 
       <main> 
+        <ZoneRecherche />
         <CityTable />
       </main>
       <Footer />
