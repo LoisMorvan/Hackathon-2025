@@ -1,5 +1,5 @@
 
-import './App.css';
+import '../App.css';
 import Navbar from '../components/Navbar';
 import CityTable from '../components/CityTable';
 import ZoneRecherche from '../components/zoneRecherche';
