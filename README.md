@@ -1,55 +1,78 @@
-# 🧠 Hackathon 2025
+# 🏥 Simulateur Territorial – Hackathon "Soigner le Territoire"
 
-*Un projet si futuriste qu’il vient avec son propre README depuis le futur.*
+Ce projet a été réalisé dans le cadre du hackathon visant à lutter contre les déserts médicaux en Loire-Atlantique.
 
-## 🚀 Prérequis
+🎯 **Objectif :** Fournir aux élus un outil de simulation pour tester différents scénarios d'implantation de professionnels de santé (ex : maisons de santé, mobilité, zones prioritaires).
 
-Avant de lancer la machine (à café ou à code) :
+---
 
-- Python 3.x doit être installé sur votre machine.
-  Vous pouvez vérifier avec :
+## 🧱 Architecture de l’application
 
-  ```bash
-  python --version
-  ```
+| Composant | Techno      | Description                                  |
+| --------- | ----------- | -------------------------------------------- |
+| Frontend  | React (CRA) | Interface interactive de simulation          |
+| Backend   | FastAPI     | API pour le traitement des données & calculs |
 
-## 🛠️ Étapes d'installation
+---
 
-### 1. Cloner le dépôt
+## 🚀 Lancement rapide (1 commande)
+
+### ✅ Prérequis
+
+- Python ≥ 3.9
+- Node.js ≥ 16
+- Unix-like shell (`bash`, compatible WSL/macOS/Linux)
+
+### ▶️ Lancer toute l’application :
 
 ```bash
-git clone https://github.com/LoisMorvan/Hackathon-2025.git
-cd Hackathon-2025
+bash start.sh
 ```
 
-### 2. Installer les dépendances à la racine
+Ce script :
+
+- Crée les environnements virtuels
+- Installe les dépendances du backend et du frontend
+- Démarre l’API FastAPI sur [http://localhost:8000](http://localhost:8000)
+- Démarre le frontend React sur [http://localhost:3000](http://localhost:3000)
+
+---
+
+## 🔧 Commandes manuelles (si besoin)
+
+### Backend (FastAPI)
 
 ```bash
+cd Hackathon/backend
+python -m venv venv
+source venv/bin/activate
 pip install -r requirements.txt
+uvicorn main:app --reload
 ```
 
-### 3. Accéder au dossier backend
+### Frontend (React)
 
 ```bash
-cd backend
-```
-
-### 4. Installer les dépendances spécifiques au backend
-
-```bash
-pip install -r requirements.txt
-```
-
-### 5. Lancer le backend avec Uvicorn
-
-```bash
-uvicorn main:app
-```
-
-### 6. Revenir à la racine du projet (si nécessaire)
-
-```bash
-cd ..
+cd Hackathon/hackathon-softeam
+npm install
+npm start
 ```
 
 ---
+
+## 🌐 URLs
+
+- Frontend : [http://localhost:3000](http://localhost:3000)
+- Backend API : [http://localhost:8000](http://localhost:8000)
+- Docs API Swagger : [http://localhost:8000/docs](http://localhost:8000/docs)
+
+---
+
+## 📂 Structure du projet
+
+```
+Hackathon/
+├── backend/              # API FastAPI
+├── hackathon-softeam/    # Frontend React
+└── start.sh              # Script d’installation automatique
+```
