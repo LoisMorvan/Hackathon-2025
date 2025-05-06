@@ -9,7 +9,6 @@ function App() {
     <div lang="fr">
       <Navbar /> 
       <main> 
-        <ZoneRecherche />
         <CityTable />
       </main>
       <Footer />

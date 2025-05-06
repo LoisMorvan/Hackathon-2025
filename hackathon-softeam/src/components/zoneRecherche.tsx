@@ -2,7 +2,12 @@ import React, { useState, useRef, useEffect } from 'react';
 import { getCommunes } from "../services/services";
 import '../styles/zoneRecherche.css';
 
-const ZoneRecherche = () => {
+interface ZoneRechercheProps {
+  onSearch?: (searchTerm: string) => void; // Transmet le terme de recherche au parent
+  onSelect?: (selectedCommunes: { nom: string }[]) => void; // Transmet les villes sélectionnées au parent
+}
+
+const ZoneRecherche: React.FC<ZoneRechercheProps> = ({ onSearch, onSelect }) => {
   const [inputValue, setInputValue] = useState('');
   const [suggestions, setSuggestions] = useState<{ nom: string }[]>([]);
   const [selectedList, setSelectedList] = useState<{ nom: string }[]>([]);
@@ -27,25 +32,34 @@ const ZoneRecherche = () => {
       c.nom.toLowerCase().includes(value.toLowerCase())
     );
     setSuggestions(filtered);
+
+    if (onSearch) {
+      onSearch(value); // Transmet le terme de recherche au parent
+    }
   };
 
   const handleSelect = (commune: { nom: string }) => {
     const alreadySelected = selectedList.find(c => c.nom === commune.nom);
-    if (alreadySelected) {
-      setSelectedList(selectedList.filter(c => c.nom !== commune.nom));
-    } else {
-      setSelectedList([...selectedList, commune]);
+    if (!alreadySelected) {
+      const updatedList = [...selectedList, commune];
+      setSelectedList(updatedList);
+
+      // Transmet les villes sélectionnées au parent
+      if (onSelect) {
+        onSelect(updatedList);
+      }
     }
+    setInputValue(''); // Réinitialise le champ de recherche
+    setSuggestions([]); // Cache les suggestions
   };
 
-  const handleRemove = (commune: {nom: string }) => {
-    setSelectedList(selectedList.filter(c => c.nom !== commune.nom));
-  };
+  const handleRemove = (commune: { nom: string }) => {
+    const updatedList = selectedList.filter(c => c.nom !== commune.nom);
+    setSelectedList(updatedList);
 
-  const handleRecherche = () => {
-    if (selectedList.length > 0) {
-      const noms = selectedList.map(c => c.nom).join(', ');
-      alert(`Recherche lancée pour : ${noms}`);
+    // Transmet les villes sélectionnées au parent
+    if (onSelect) {
+      onSelect(updatedList);
     }
   };
 
@@ -78,14 +92,13 @@ const ZoneRecherche = () => {
           placeholder="Entrez une commune"
           className="input-recherche"
         />
-        <button onClick={handleRecherche} className="btn-recherche">Rechercher</button>
 
         {suggestions.length > 0 && (
           <ul className="suggestions">
             {suggestions.map((c) => (
               <li
                 key={c.nom}
-                className={`suggestion-item ${selectedList.find(sel => sel.nom === c.nom) ? 'selected' : ''}`}
+                className="suggestion-item"
                 onClick={() => handleSelect(c)}
               >
                 {c.nom}
