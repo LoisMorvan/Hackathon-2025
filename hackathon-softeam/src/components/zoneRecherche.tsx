@@ -4,12 +4,12 @@ import '../styles/zoneRecherche.css';
 
 const ZoneRecherche = () => {
   const [inputValue, setInputValue] = useState('');
-  const [suggestions, setSuggestions] = useState([]);
-  const [selectedList, setSelectedList] = useState([]);
+  const [suggestions, setSuggestions] = useState<{ code: string; nom: string }[]>([]);
+  const [selectedList, setSelectedList] = useState<{ code: string; nom: string }[]>([]);
 
-  const searchRef = useRef(null);
+  const searchRef = useRef<HTMLDivElement>(null);
 
-  const handleChange = (e) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value;
     setInputValue(value);
     const filtered = communes.filter(c =>
@@ -18,7 +18,7 @@ const ZoneRecherche = () => {
     setSuggestions(filtered);
   };
 
-  const handleSelect = (commune) => {
+  const handleSelect = (commune: { code: string; nom: string }) => {
     const alreadySelected = selectedList.find(c => c.code === commune.code);
     if (alreadySelected) {
       setSelectedList(selectedList.filter(c => c.code !== commune.code));
@@ -27,7 +27,7 @@ const ZoneRecherche = () => {
     }
   };
 
-  const handleRemove = (commune) => {
+  const handleRemove = (commune: { code: string; nom: string }) => {
     setSelectedList(selectedList.filter(c => c.code !== commune.code));
   };
 
@@ -39,8 +39,8 @@ const ZoneRecherche = () => {
   };
 
   useEffect(() => {
-    const handleClickOutside = (e) => {
-      if (searchRef.current && !searchRef.current.contains(e.target)) {
+    const handleClickOutside = (e: MouseEvent) => {
+      if (searchRef.current && !searchRef.current.contains(e.target as Node)) {
         setSuggestions([]);
       }
     };

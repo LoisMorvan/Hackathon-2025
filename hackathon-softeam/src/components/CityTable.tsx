@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import './CityTable.css'; 
+import '../styles/CityTable.css'; 
 
 interface Commune {
   nom_commune: string;
