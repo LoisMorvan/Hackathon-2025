@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './index.css';
 import App from './App';
-import CityTable from './CityTable';
+import CityTable from './components/CityTable';
 import reportWebVitals from './reportWebVitals';
 import Comparateur from './Comparateur';
 
