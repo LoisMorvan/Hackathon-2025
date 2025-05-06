@@ -5,8 +5,6 @@ echo "🚀 Initialisation de l'application..."
 # === BACKEND ===
 echo "📦 Installation des dépendances backend..."
 cd backend || exit 1
-python3 -m venv venv
-source venv/bin/activate
 pip install -r requirements.txt
 
 # Lancer le backend en arrière-plan
