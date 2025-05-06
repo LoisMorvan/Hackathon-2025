@@ -1,32 +1,56 @@
-import urllib
-from fastapi import FastAPI, HTTPException, Query
-from fastapi.responses import JSONResponse
+import os
+import json
 import requests
-
+from typing import List, Optional, Union, Dict
+from fastapi import FastAPI, HTTPException, Query
+from pydantic import BaseModel, ValidationError
+from fastapi.params import Query as FastAPIQuery
 app = FastAPI(
     title="API Communes 44",
     description="API de recherche de communes en Loire-Atlantique 🐌",
     version="1.0"
 )
 
+# === MODELES ===
+
+class CommuneSimple(BaseModel):
+    nom: str
+    codesPostaux: List[str]
+    population: Optional[int] = 0
+
+class Coordonnees(BaseModel):
+    lat: float
+    lon: float
+
+class CommuneBase(BaseModel):
+    nom_commune: str
+    code_postal: str
+    population: int
+
+class CommuneInfo(CommuneBase):
+    nombre_medecins: int
+    ratio: Optional[float] = None
+    coordonnees: Coordonnees
+
+# === ROUTES ===
 
 @app.get("/", tags=["Index"])
-def index():
+def index() -> Dict[str, str]:
     return {"message": "API de recherche de communes en Loire-Atlantique"}
 
-
-@app.get("/communes", tags=["Communes"])
-def get_communes(value: str = Query(None, description="Nom ou code postal (facultatif)")):
+@app.get("/communes", response_model=List[CommuneSimple], tags=["Communes"])
+def get_communes(value: Optional[str] = Query(None, description="Nom ou code postal (facultatif)")):
     try:
         if value is None:
             url = "https://geo.api.gouv.fr/departements/44/communes"
             params = {"fields": "nom,codesPostaux,population", "format": "json"}
         else:
             url = "https://geo.api.gouv.fr/communes"
+            key = "codePostal" if value.isdigit() else "nom"
             params = {
                 "fields": "nom,codesPostaux,population",
                 "format": "json",
-                "codePostal" if value.isdigit() else "nom": value
+                key: value
             }
 
         response = requests.get(url, params=params)
@@ -38,79 +62,70 @@ def get_communes(value: str = Query(None, description="Nom ou code postal (facul
         raise HTTPException(status_code=500, detail="Erreur lors de la récupération des données")
 
 
-@app.get("/commune-info", tags=["Communes enrichies"])
-def commune_info(value: str = Query(None, description="Nom ou code postal de la commune (facultatif)")):
+@app.get("/commune-info", response_model=Union[CommuneInfo, List[CommuneInfo]], tags=["Communes enrichies"])
+def commune_info(value: Optional[str] = Query(None, description="Nom ou code postal de la commune (facultatif)")):
     try:
-        if value is None:
-            url = "https://geo.api.gouv.fr/departements/44/communes"
-            params = {"fields": "nom,codesPostaux,population,centre", "format": "json"}
-            response = requests.get(url, params=params)
-            response.raise_for_status()
-            communes = response.json()
-        else:
-            url = "https://geo.api.gouv.fr/communes"
-            params = {
-                "fields": "nom,codesPostaux,population,centre",
-                "format": "json",
-                "codePostal" if value.isdigit() else "nom": value
-            }
-            response = requests.get(url, params=params)
-            response.raise_for_status()
-            communes = response.json()
-            if not communes:
+        # Corrige la valeur si elle est un objet Query
+        if isinstance(value, FastAPIQuery):
+            value = None
+
+        file_path = os.path.join(os.getcwd(), "communes_info.json")
+        if not os.path.exists(file_path):
+            raise HTTPException(status_code=500, detail="Le fichier 'communes_info.json' est introuvable. Veuillez le générer d'abord.")
+
+        with open(file_path, "r", encoding="utf-8") as f:
+            raw_data = json.load(f)
+
+        data = [CommuneInfo(**c) for c in raw_data]
+
+        if value:
+            filtered = [
+                c for c in data
+                if value.lower() in c.nom_commune.lower() or value in c.code_postal
+            ]
+            if not filtered:
                 raise HTTPException(status_code=404, detail=f"Aucune commune trouvée pour '{value}'")
+            return filtered[0] if len(filtered) == 1 else filtered
 
-        results = []
-        for commune in communes:
-            nom = commune["nom"]
-            codes_postaux = ", ".join(commune["codesPostaux"])
-            population = commune.get("population", 0)
-            lat = commune["centre"]["coordinates"][1]
-            lon = commune["centre"]["coordinates"][0]
-            nb_medecins = compteur_medecin(nom)
+        return data
 
-            result = {
-                "nom_commune": nom,
-                "code_postal": codes_postaux,
-                "population": population,
-                "nombre_medecins": nb_medecins,
-                "ration": round(population / nb_medecins, 2) if nb_medecins else None,
-                "coordonnees": {
-                    "lat": lat,
-                    "lon": lon
-                }
-            }
-            results.append(result)
+    except ValidationError as e:
+        print(f"💥 Validation error: {e}")
+        raise HTTPException(status_code=500, detail="Erreur de validation des données.")
+    except Exception as e:
+        print(f"📁 Erreur lecture JSON : {str(e)}")
+        raise HTTPException(status_code=500, detail="Erreur lors de la lecture des données locales")
 
-        return results if value is None else results[0]
+# === Fonction auxiliaire ===
 
-    except requests.exceptions.RequestException as e:
-        print(f"🧨 Erreur API : {e}")
-        raise HTTPException(status_code=500, detail="Erreur lors de la récupération des données")
-
-
-def compteur_medecin(commune: str = None) -> int:
-    base_url = (
-        "https://public.opendatasoft.com/api/explore/v2.1/catalog/datasets/medecins/records"
-        "?limit=1"
-    )
-
-    filtres = [
-        "refine=libelle_profession%3A%22Médecin%20généraliste%22",
-        "refine=dep_name%3A%22Loire-Atlantique%22"
-    ]
-
+def compteur_medecin(commune: Optional[str] = None) -> int:
+    base_url = "https://public.opendatasoft.com/api/records/1.0/search/"
+    params = {
+        "dataset": "medecins",
+        "rows": 0,
+        "refine.libelle_profession": "Médecin généraliste",
+        "refine.dep_name": "Loire-Atlantique"
+    }
     if commune:
-        commune_filtrée = urllib.parse.quote(commune)
-        filtres.append(f"refine=commune%3A%22{commune_filtrée}%22")
-
-    url = base_url + "&" + "&".join(filtres)
+        params["refine.commune"] = commune
 
     try:
-        response = requests.get(url)
+        response = requests.get(base_url, params=params)
         response.raise_for_status()
         data = response.json()
-        return data.get("total_count", 0)
+        return data.get("nhits", 0)
     except requests.RequestException as e:
-        print(f"🧨 Erreur pendant l'appel API : {e}")
+        print(f"🚨 Erreur pendant l'appel API : {e}")
         return 0
+
+# === Test local si exécution directe ===
+
+if __name__ == "__main__":
+    try:
+        result = commune_info("nantes")  # ou None pour tout
+        print(json.dumps(
+            [r.model_dump() for r in result] if isinstance(result, list) else result.model_dump(),
+            indent=2, ensure_ascii=False
+        ))
+    except HTTPException as e:
+        print(f"Erreur : {e.detail}")
