@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from routes import index, communes, etablissements
+from routes import index, communes, etablissements,couverture,ecole
+
 
 app = FastAPI(
     title="API Communes 44",
@@ -21,3 +22,5 @@ app.add_middleware(
 app.include_router(index.router)
 app.include_router(communes.router)
 app.include_router(etablissements.router)
+app.include_router(couverture.router)
+app.include_router(ecole.router)
