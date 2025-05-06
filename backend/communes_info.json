@@ -4,7 +4,7 @@
     "code_postal": "44170",
     "population": 2052,
     "nombre_medecins": 6,
-    "ratio": null,
+    "ratio": 2.92,
     "coordonnees": {
       "lat": 47.5546,
       "lon": -1.4929
@@ -15,7 +15,7 @@
     "code_postal": "44140",
     "population": 4121,
     "nombre_medecins": 34,
-    "ratio": null,
+    "ratio": 8.25,
     "coordonnees": {
       "lat": 47.0735,
       "lon": -1.4121
@@ -26,7 +26,7 @@
     "code_postal": "44150",
     "population": 11346,
     "nombre_medecins": 60,
-    "ratio": null,
+    "ratio": 5.29,
     "coordonnees": {
       "lat": 47.382,
       "lon": -1.1681
@@ -37,7 +37,7 @@
     "code_postal": "44320, 44680",
     "population": 7288,
     "nombre_medecins": 12,
-    "ratio": null,
+    "ratio": 1.65,
     "coordonnees": {
       "lat": 47.1561,
       "lon": -1.9153
@@ -48,7 +48,7 @@
     "code_postal": "44410",
     "population": 1881,
     "nombre_medecins": 19,
-    "ratio": null,
+    "ratio": 10.1,
     "coordonnees": {
       "lat": 47.442,
       "lon": -2.4127
@@ -59,7 +59,7 @@
     "code_postal": "44460",
     "population": 2451,
     "nombre_medecins": 0,
-    "ratio": null,
+    "ratio": 0.0,
     "coordonnees": {
       "lat": 47.645,
       "lon": -1.9724
@@ -70,7 +70,7 @@
     "code_postal": "44115",
     "population": 9617,
     "nombre_medecins": 68,
-    "ratio": null,
+    "ratio": 7.07,
     "coordonnees": {
       "lat": 47.2134,
       "lon": -1.4628
@@ -81,7 +81,7 @@
     "code_postal": "44740",
     "population": 2799,
     "nombre_medecins": 0,
-    "ratio": null,
+    "ratio": 0.0,
     "coordonnees": {
       "lat": 47.2789,
       "lon": -2.4701
@@ -92,7 +92,7 @@
     "code_postal": "44760",
     "population": 3523,
     "nombre_medecins": 8,
-    "ratio": null,
+    "ratio": 2.27,
     "coordonnees": {
       "lat": 47.0862,
       "lon": -2.0318
@@ -103,7 +103,7 @@
     "code_postal": "44160",
     "population": 3317,
     "nombre_medecins": 8,
-    "ratio": null,
+    "ratio": 2.41,
     "coordonnees": {
       "lat": 47.3828,
       "lon": -2.0703
@@ -114,7 +114,7 @@
     "code_postal": "44140",
     "population": 3967,
     "nombre_medecins": 39,
-    "ratio": null,
+    "ratio": 9.83,
     "coordonnees": {
       "lat": 47.1,
       "lon": -1.5048
@@ -125,7 +125,7 @@
     "code_postal": "44130",
     "population": 10352,
     "nombre_medecins": 83,
-    "ratio": null,
+    "ratio": 8.02,
     "coordonnees": {
       "lat": 47.4562,
       "lon": -1.7817
@@ -136,7 +136,7 @@
     "code_postal": "44430",
     "population": 1114,
     "nombre_medecins": 0,
-    "ratio": null,
+    "ratio": 0.0,
     "coordonnees": {
       "lat": 47.2347,
       "lon": -1.2063
@@ -147,7 +147,7 @@
     "code_postal": "44830",
     "population": 8281,
     "nombre_medecins": 0,
-    "ratio": null,
+    "ratio": 0.0,
     "coordonnees": {
       "lat": 47.1478,
       "lon": -1.6687
@@ -158,7 +158,7 @@
     "code_postal": "44260",
     "population": 1100,
     "nombre_medecins": 0,
-    "ratio": null,
+    "ratio": 0.0,
     "coordonnees": {
       "lat": 47.3072,
       "lon": -1.9182
@@ -169,7 +169,7 @@
     "code_postal": "44340",
     "population": 20590,
     "nombre_medecins": 98,
-    "ratio": null,
+    "ratio": 4.76,
     "coordonnees": {
       "lat": 47.171,
       "lon": -1.6181
@@ -180,7 +180,7 @@
     "code_postal": "44580",
     "population": 5004,
     "nombre_medecins": 13,
-    "ratio": null,
+    "ratio": 2.6,
     "coordonnees": {
       "lat": 47.035,
       "lon": -1.9019
@@ -191,7 +191,7 @@
     "code_postal": "44190",
     "population": 2814,
     "nombre_medecins": 0,
-    "ratio": null,
+    "ratio": 0.0,
     "coordonnees": {
       "lat": 47.0546,
       "lon": -1.1659
@@ -202,7 +202,7 @@
     "code_postal": "44130",
     "population": 3067,
     "nombre_medecins": 8,
-    "ratio": null,
+    "ratio": 2.61,
     "coordonnees": {
       "lat": 47.42,
       "lon": -1.8691
@@ -213,7 +213,7 @@
     "code_postal": "44830",
     "population": 2760,
     "nombre_medecins": 6,
-    "ratio": null,
+    "ratio": 2.17,
     "coordonnees": {
       "lat": 47.1699,
       "lon": -1.7238
@@ -224,7 +224,7 @@
     "code_postal": "44750",
     "population": 4031,
     "nombre_medecins": 27,
-    "ratio": null,
+    "ratio": 6.7,
     "coordonnees": {
       "lat": 47.4155,
       "lon": -1.988
@@ -235,7 +235,7 @@
     "code_postal": "44470",
     "population": 20535,
     "nombre_medecins": 91,
-    "ratio": null,
+    "ratio": 4.43,
     "coordonnees": {
       "lat": 47.2968,
       "lon": -1.4687
@@ -246,7 +246,7 @@
     "code_postal": "44390",
     "population": 2600,
     "nombre_medecins": 32,
-    "ratio": null,
+    "ratio": 12.31,
     "coordonnees": {
       "lat": 47.3925,
       "lon": -1.548
@@ -257,7 +257,7 @@
     "code_postal": "44850",
     "population": 4011,
     "nombre_medecins": 14,
-    "ratio": null,
+    "ratio": 3.49,
     "coordonnees": {
       "lat": 47.3375,
       "lon": -1.3553
@@ -268,7 +268,7 @@
     "code_postal": "44450",
     "population": 7158,
     "nombre_medecins": 53,
-    "ratio": null,
+    "ratio": 7.4,
     "coordonnees": {
       "lat": 47.2789,
       "lon": -1.3386
@@ -279,7 +279,7 @@
     "code_postal": "44410",
     "population": 4424,
     "nombre_medecins": 4,
-    "ratio": null,
+    "ratio": 0.9,
     "coordonnees": {
       "lat": 47.4362,
       "lon": -2.2477
@@ -290,7 +290,7 @@
     "code_postal": "44670",
     "population": 811,
     "nombre_medecins": 0,
-    "ratio": null,
+    "ratio": 0.0,
     "coordonnees": {
       "lat": 47.6243,
       "lon": -1.1919
@@ -301,7 +301,7 @@
     "code_postal": "44330",
     "population": 3443,
     "nombre_medecins": 23,
-    "ratio": null,
+    "ratio": 6.68,
     "coordonnees": {
       "lat": 47.1745,
       "lon": -1.3468
@@ -312,7 +312,7 @@
     "code_postal": "44260",
     "population": 3246,
     "nombre_medecins": 18,
-    "ratio": null,
+    "ratio": 5.55,
     "coordonnees": {
       "lat": 47.3474,
       "lon": -1.9786
@@ -323,7 +323,7 @@
     "code_postal": "44240",
     "population": 20483,
     "nombre_medecins": 123,
-    "ratio": null,
+    "ratio": 6.0,
     "coordonnees": {
       "lat": 47.3041,
       "lon": -1.5621
@@ -334,7 +334,7 @@
     "code_postal": "44110",
     "population": 12231,
     "nombre_medecins": 32,
-    "ratio": null,
+    "ratio": 2.62,
     "coordonnees": {
       "lat": 47.7199,
       "lon": -1.3912
@@ -345,7 +345,7 @@
     "code_postal": "44690",
     "population": 3138,
     "nombre_medecins": 5,
-    "ratio": null,
+    "ratio": 1.59,
     "coordonnees": {
       "lat": 47.1169,
       "lon": -1.4467
@@ -356,7 +356,7 @@
     "code_postal": "44320",
     "population": 3035,
     "nombre_medecins": 2,
-    "ratio": null,
+    "ratio": 0.66,
     "coordonnees": {
       "lat": 47.1602,
       "lon": -2.0132
@@ -367,7 +367,7 @@
     "code_postal": "44640",
     "population": 1172,
     "nombre_medecins": 0,
-    "ratio": null,
+    "ratio": 0.0,
     "coordonnees": {
       "lat": 47.1819,
       "lon": -1.8003
@@ -378,7 +378,7 @@
     "code_postal": "44118",
     "population": 6342,
     "nombre_medecins": 21,
-    "ratio": null,
+    "ratio": 3.31,
     "coordonnees": {
       "lat": 47.0908,
       "lon": -1.5965
@@ -389,7 +389,7 @@
     "code_postal": "44190",
     "population": 7459,
     "nombre_medecins": 59,
-    "ratio": null,
+    "ratio": 7.91,
     "coordonnees": {
       "lat": 47.0936,
       "lon": -1.2654
@@ -400,7 +400,7 @@
     "code_postal": "44290",
     "population": 1072,
     "nombre_medecins": 0,
-    "ratio": null,
+    "ratio": 0.0,
     "coordonnees": {
       "lat": 47.6467,
       "lon": -1.7672
@@ -411,7 +411,7 @@
     "code_postal": "44360",
     "population": 3954,
     "nombre_medecins": 22,
-    "ratio": null,
+    "ratio": 5.56,
     "coordonnees": {
       "lat": 47.2918,
       "lon": -1.8349
@@ -422,7 +422,7 @@
     "code_postal": "44560",
     "population": 2615,
     "nombre_medecins": 23,
-    "ratio": null,
+    "ratio": 8.8,
     "coordonnees": {
       "lat": 47.2672,
       "lon": -2.0894
@@ -433,7 +433,7 @@
     "code_postal": "44220",
     "population": 23541,
     "nombre_medecins": 70,
-    "ratio": null,
+    "ratio": 2.97,
     "coordonnees": {
       "lat": 47.2391,
       "lon": -1.7472
@@ -444,7 +444,7 @@
     "code_postal": "44521",
     "population": 2534,
     "nombre_medecins": 8,
-    "ratio": null,
+    "ratio": 3.16,
     "coordonnees": {
       "lat": 47.3873,
       "lon": -1.2853
@@ -455,7 +455,7 @@
     "code_postal": "44490",
     "population": 4081,
     "nombre_medecins": 3,
-    "ratio": null,
+    "ratio": 0.74,
     "coordonnees": {
       "lat": 47.2942,
       "lon": -2.5245
@@ -466,7 +466,7 @@
     "code_postal": "44160",
     "population": 2985,
     "nombre_medecins": 4,
-    "ratio": null,
+    "ratio": 1.34,
     "coordonnees": {
       "lat": 47.4055,
       "lon": -2.1528
@@ -477,7 +477,7 @@
     "code_postal": "44590",
     "population": 3578,
     "nombre_medecins": 37,
-    "ratio": null,
+    "ratio": 10.34,
     "coordonnees": {
       "lat": 47.6546,
       "lon": -1.6732
@@ -488,7 +488,7 @@
     "code_postal": "44480",
     "population": 8117,
     "nombre_medecins": 22,
-    "ratio": null,
+    "ratio": 2.71,
     "coordonnees": {
       "lat": 47.3398,
       "lon": -2.0731
@@ -499,7 +499,7 @@
     "code_postal": "44530",
     "population": 2288,
     "nombre_medecins": 8,
-    "ratio": null,
+    "ratio": 3.5,
     "coordonnees": {
       "lat": 47.4676,
       "lon": -2.0611
@@ -510,7 +510,7 @@
     "code_postal": "44110",
     "population": 3062,
     "nombre_medecins": 0,
-    "ratio": null,
+    "ratio": 0.0,
     "coordonnees": {
       "lat": 47.6681,
       "lon": -1.3269
@@ -521,7 +521,7 @@
     "code_postal": "44500",
     "population": 16613,
     "nombre_medecins": 61,
-    "ratio": null,
+    "ratio": 3.67,
     "coordonnees": {
       "lat": 47.2925,
       "lon": -2.3622
@@ -532,7 +532,7 @@
     "code_postal": "44130",
     "population": 3852,
     "nombre_medecins": 15,
-    "ratio": null,
+    "ratio": 3.89,
     "coordonnees": {
       "lat": 47.3881,
       "lon": -1.8076
@@ -543,7 +543,7 @@
     "code_postal": "44460",
     "population": 2257,
     "nombre_medecins": 0,
-    "ratio": null,
+    "ratio": 0.0,
     "coordonnees": {
       "lat": 47.5762,
       "lon": -2.029
@@ -554,7 +554,7 @@
     "code_postal": "44660",
     "population": 502,
     "nombre_medecins": 0,
-    "ratio": null,
+    "ratio": 0.0,
     "coordonnees": {
       "lat": 47.8034,
       "lon": -1.381
@@ -565,7 +565,7 @@
     "code_postal": "44320",
     "population": 3289,
     "nombre_medecins": 26,
-    "ratio": null,
+    "ratio": 7.91,
     "coordonnees": {
       "lat": 47.2514,
       "lon": -1.9371
@@ -576,7 +576,7 @@
     "code_postal": "44130",
     "population": 1880,
     "nombre_medecins": 0,
-    "ratio": null,
+    "ratio": 0.0,
     "coordonnees": {
       "lat": 47.5328,
       "lon": -1.8046
@@ -587,7 +587,7 @@
     "code_postal": "44190",
     "population": 3794,
     "nombre_medecins": 39,
-    "ratio": null,
+    "ratio": 10.28,
     "coordonnees": {
       "lat": 47.0771,
       "lon": -1.2196
@@ -598,7 +598,7 @@
     "code_postal": "44190",
     "population": 5090,
     "nombre_medecins": 30,
-    "ratio": null,
+    "ratio": 5.89,
     "coordonnees": {
       "lat": 47.1032,
       "lon": -1.3134
@@ -609,7 +609,7 @@
     "code_postal": "44520",
     "population": 770,
     "nombre_medecins": 0,
-    "ratio": null,
+    "ratio": 0.0,
     "coordonnees": {
       "lat": 47.5797,
       "lon": -1.3106
@@ -620,7 +620,7 @@
     "code_postal": "44119",
     "population": 6910,
     "nombre_medecins": 33,
-    "ratio": null,
+    "ratio": 4.78,
     "coordonnees": {
       "lat": 47.3629,
       "lon": -1.6234
@@ -631,7 +631,7 @@
     "code_postal": "44290",
     "population": 5242,
     "nombre_medecins": 33,
-    "ratio": null,
+    "ratio": 6.3,
     "coordonnees": {
       "lat": 47.6412,
       "lon": -1.8223
@@ -642,7 +642,7 @@
     "code_postal": "44530",
     "population": 3577,
     "nombre_medecins": 8,
-    "ratio": null,
+    "ratio": 2.24,
     "coordonnees": {
       "lat": 47.5133,
       "lon": -1.947
@@ -653,7 +653,7 @@
     "code_postal": "44350",
     "population": 16684,
     "nombre_medecins": 157,
-    "ratio": null,
+    "ratio": 9.41,
     "coordonnees": {
       "lat": 47.3358,
       "lon": -2.4133
@@ -664,7 +664,7 @@
     "code_postal": "44690",
     "population": 4734,
     "nombre_medecins": 23,
-    "ratio": null,
+    "ratio": 4.86,
     "coordonnees": {
       "lat": 47.1612,
       "lon": -1.4033
@@ -675,7 +675,7 @@
     "code_postal": "44115",
     "population": 5992,
     "nombre_medecins": 34,
-    "ratio": null,
+    "ratio": 5.67,
     "coordonnees": {
       "lat": 47.1951,
       "lon": -1.4097
@@ -686,7 +686,7 @@
     "code_postal": "44410",
     "population": 7178,
     "nombre_medecins": 43,
-    "ratio": null,
+    "ratio": 5.99,
     "coordonnees": {
       "lat": 47.451,
       "lon": -2.3149
@@ -697,7 +697,7 @@
     "code_postal": "44810",
     "population": 6528,
     "nombre_medecins": 85,
-    "ratio": null,
+    "ratio": 13.02,
     "coordonnees": {
       "lat": 47.4208,
       "lon": -1.6404
@@ -708,7 +708,7 @@
     "code_postal": "44610",
     "population": 4172,
     "nombre_medecins": 75,
-    "ratio": null,
+    "ratio": 17.98,
     "coordonnees": {
       "lat": 47.1993,
       "lon": -1.6701
@@ -719,7 +719,7 @@
     "code_postal": "44520",
     "population": 1825,
     "nombre_medecins": 3,
-    "ratio": null,
+    "ratio": 1.64,
     "coordonnees": {
       "lat": 47.6219,
       "lon": -1.4537
@@ -730,7 +730,7 @@
     "code_postal": "44170",
     "population": 1381,
     "nombre_medecins": 0,
-    "ratio": null,
+    "ratio": 0.0,
     "coordonnees": {
       "lat": 47.6254,
       "lon": -1.6023
@@ -741,7 +741,7 @@
     "code_postal": "44440",
     "population": 2753,
     "nombre_medecins": 5,
-    "ratio": null,
+    "ratio": 1.82,
     "coordonnees": {
       "lat": 47.5084,
       "lon": -1.4312
@@ -752,7 +752,7 @@
     "code_postal": "44670",
     "population": 327,
     "nombre_medecins": 0,
-    "ratio": null,
+    "ratio": 0.0,
     "coordonnees": {
       "lat": 47.688,
       "lon": -1.2267
@@ -763,7 +763,7 @@
     "code_postal": "44430",
     "population": 3214,
     "nombre_medecins": 13,
-    "ratio": null,
+    "ratio": 4.04,
     "coordonnees": {
       "lat": 47.2089,
       "lon": -1.3006
@@ -774,7 +774,7 @@
     "code_postal": "44260",
     "population": 769,
     "nombre_medecins": 0,
-    "ratio": null,
+    "ratio": 0.0,
     "coordonnees": {
       "lat": 47.3202,
       "lon": -1.9571
@@ -785,7 +785,7 @@
     "code_postal": "44650",
     "population": 4769,
     "nombre_medecins": 47,
-    "ratio": null,
+    "ratio": 9.86,
     "coordonnees": {
       "lat": 46.9026,
       "lon": -1.5713
@@ -796,7 +796,7 @@
     "code_postal": "44850",
     "population": 5593,
     "nombre_medecins": 0,
-    "ratio": null,
+    "ratio": 0.0,
     "coordonnees": {
       "lat": 47.4035,
       "lon": -1.3792
@@ -807,7 +807,7 @@
     "code_postal": "44310",
     "population": 2468,
     "nombre_medecins": 0,
-    "ratio": null,
+    "ratio": 0.0,
     "coordonnees": {
       "lat": 46.9872,
       "lon": -1.637
@@ -818,7 +818,7 @@
     "code_postal": "44430",
     "population": 8595,
     "nombre_medecins": 53,
-    "ratio": null,
+    "ratio": 6.17,
     "coordonnees": {
       "lat": 47.2325,
       "lon": -1.3272
@@ -829,7 +829,7 @@
     "code_postal": "44110",
     "population": 949,
     "nombre_medecins": 0,
-    "ratio": null,
+    "ratio": 0.0,
     "coordonnees": {
       "lat": 47.67,
       "lon": -1.4281
@@ -840,7 +840,7 @@
     "code_postal": "44590",
     "population": 1064,
     "nombre_medecins": 0,
-    "ratio": null,
+    "ratio": 0.0,
     "coordonnees": {
       "lat": 47.6752,
       "lon": -1.5844
@@ -851,7 +851,7 @@
     "code_postal": "44270",
     "population": 7665,
     "nombre_medecins": 52,
-    "ratio": null,
+    "ratio": 6.78,
     "coordonnees": {
       "lat": 47.0057,
       "lon": -1.8063
@@ -862,7 +862,7 @@
     "code_postal": "44690",
     "population": 3071,
     "nombre_medecins": 2,
-    "ratio": null,
+    "ratio": 0.65,
     "coordonnees": {
       "lat": 47.1181,
       "lon": -1.3884
@@ -873,7 +873,7 @@
     "code_postal": "44260",
     "population": 3689,
     "nombre_medecins": 0,
-    "ratio": null,
+    "ratio": 0.0,
     "coordonnees": {
       "lat": 47.3441,
       "lon": -1.8451
@@ -884,7 +884,7 @@
     "code_postal": "44270",
     "population": 1578,
     "nombre_medecins": 0,
-    "ratio": null,
+    "ratio": 0.0,
     "coordonnees": {
       "lat": 46.9886,
       "lon": -1.7251
@@ -895,7 +895,7 @@
     "code_postal": "44170",
     "population": 1529,
     "nombre_medecins": 4,
-    "ratio": null,
+    "ratio": 2.62,
     "coordonnees": {
       "lat": 47.5948,
       "lon": -1.6967
@@ -906,7 +906,7 @@
     "code_postal": "44290",
     "population": 670,
     "nombre_medecins": 0,
-    "ratio": null,
+    "ratio": 0.0,
     "coordonnees": {
       "lat": 47.675,
       "lon": -1.9099
@@ -917,7 +917,7 @@
     "code_postal": "44470",
     "population": 3393,
     "nombre_medecins": 31,
-    "ratio": null,
+    "ratio": 9.14,
     "coordonnees": {
       "lat": 47.3146,
       "lon": -1.4019
@@ -928,7 +928,7 @@
     "code_postal": "44520",
     "population": 1587,
     "nombre_medecins": 0,
-    "ratio": null,
+    "ratio": 0.0,
     "coordonnees": {
       "lat": 47.5651,
       "lon": -1.3918
@@ -939,7 +939,7 @@
     "code_postal": "44522",
     "population": 4681,
     "nombre_medecins": 34,
-    "ratio": null,
+    "ratio": 7.26,
     "coordonnees": {
       "lat": 47.4307,
       "lon": -1.2324
@@ -950,7 +950,7 @@
     "code_postal": "44420",
     "population": 2156,
     "nombre_medecins": 0,
-    "ratio": null,
+    "ratio": 0.0,
     "coordonnees": {
       "lat": 47.3991,
       "lon": -2.4693
@@ -961,7 +961,7 @@
     "code_postal": "44780",
     "population": 5619,
     "nombre_medecins": 32,
-    "ratio": null,
+    "ratio": 5.69,
     "coordonnees": {
       "lat": 47.489,
       "lon": -2.1765
@@ -972,7 +972,7 @@
     "code_postal": "44520",
     "population": 1964,
     "nombre_medecins": 32,
-    "ratio": null,
+    "ratio": 16.29,
     "coordonnees": {
       "lat": 47.6269,
       "lon": -1.3661
@@ -983,7 +983,7 @@
     "code_postal": "44690",
     "population": 2341,
     "nombre_medecins": 13,
-    "ratio": null,
+    "ratio": 5.55,
     "coordonnees": {
       "lat": 47.1202,
       "lon": -1.35
@@ -994,7 +994,7 @@
     "code_postal": "44620",
     "population": 6523,
     "nombre_medecins": 67,
-    "ratio": null,
+    "ratio": 10.27,
     "coordonnees": {
       "lat": 47.1858,
       "lon": -1.6826
@@ -1005,7 +1005,7 @@
     "code_postal": "44140",
     "population": 3346,
     "nombre_medecins": 0,
-    "ratio": null,
+    "ratio": 0.0,
     "coordonnees": {
       "lat": 47.0669,
       "lon": -1.4723
@@ -1016,7 +1016,7 @@
     "code_postal": "44550",
     "population": 7289,
     "nombre_medecins": 9,
-    "ratio": null,
+    "ratio": 1.23,
     "coordonnees": {
       "lat": 47.3238,
       "lon": -2.1539
@@ -1027,7 +1027,7 @@
     "code_postal": "44370",
     "population": 843,
     "nombre_medecins": 0,
-    "ratio": null,
+    "ratio": 0.0,
     "coordonnees": {
       "lat": 47.4019,
       "lon": -0.973
@@ -1038,7 +1038,7 @@
     "code_postal": "44590",
     "population": 356,
     "nombre_medecins": 0,
-    "ratio": null,
+    "ratio": 0.0,
     "coordonnees": {
       "lat": 47.7044,
       "lon": -1.6695
@@ -1049,7 +1049,7 @@
     "code_postal": "44760",
     "population": 1846,
     "nombre_medecins": 0,
-    "ratio": null,
+    "ratio": 0.0,
     "coordonnees": {
       "lat": 47.0552,
       "lon": -1.9883
@@ -1060,7 +1060,7 @@
     "code_postal": "44850",
     "population": 2004,
     "nombre_medecins": 0,
-    "ratio": null,
+    "ratio": 0.0,
     "coordonnees": {
       "lat": 47.4414,
       "lon": -1.3272
@@ -1071,7 +1071,7 @@
     "code_postal": "44330",
     "population": 2903,
     "nombre_medecins": 0,
-    "ratio": null,
+    "ratio": 0.0,
     "coordonnees": {
       "lat": 47.1291,
       "lon": -1.274
@@ -1082,7 +1082,7 @@
     "code_postal": "44000, 44100, 44200, 44300",
     "population": 325070,
     "nombre_medecins": 1374,
-    "ratio": null,
+    "ratio": 4.23,
     "coordonnees": {
       "lat": 47.2382,
       "lon": -1.5603
@@ -1093,7 +1093,7 @@
     "code_postal": "44390",
     "population": 9448,
     "nombre_medecins": 81,
-    "ratio": null,
+    "ratio": 8.57,
     "coordonnees": {
       "lat": 47.4454,
       "lon": -1.5239
@@ -1104,7 +1104,7 @@
     "code_postal": "44130",
     "population": 2335,
     "nombre_medecins": 6,
-    "ratio": null,
+    "ratio": 2.57,
     "coordonnees": {
       "lat": 47.3812,
       "lon": -1.7188
@@ -1115,7 +1115,7 @@
     "code_postal": "44110",
     "population": 579,
     "nombre_medecins": 0,
-    "ratio": null,
+    "ratio": 0.0,
     "coordonnees": {
       "lat": 47.7756,
       "lon": -1.3438
@@ -1126,7 +1126,7 @@
     "code_postal": "44170",
     "population": 4280,
     "nombre_medecins": 38,
-    "ratio": null,
+    "ratio": 8.88,
     "coordonnees": {
       "lat": 47.5727,
       "lon": -1.6027
@@ -1137,7 +1137,7 @@
     "code_postal": "44700",
     "population": 28341,
     "nombre_medecins": 140,
-    "ratio": null,
+    "ratio": 4.94,
     "coordonnees": {
       "lat": 47.2745,
       "lon": -1.6195
@@ -1148,7 +1148,7 @@
     "code_postal": "44521",
     "population": 3915,
     "nombre_medecins": 0,
-    "ratio": null,
+    "ratio": 0.0,
     "coordonnees": {
       "lat": 47.3532,
       "lon": -1.2676
@@ -1159,7 +1159,7 @@
     "code_postal": "44560",
     "population": 3030,
     "nombre_medecins": 4,
-    "ratio": null,
+    "ratio": 1.32,
     "coordonnees": {
       "lat": 47.2912,
       "lon": -2.028
@@ -1170,7 +1170,7 @@
     "code_postal": "44330",
     "population": 3374,
     "nombre_medecins": 9,
-    "ratio": null,
+    "ratio": 2.67,
     "coordonnees": {
       "lat": 47.1424,
       "lon": -1.3464
@@ -1181,7 +1181,7 @@
     "code_postal": "44440",
     "population": 1454,
     "nombre_medecins": 0,
-    "ratio": null,
+    "ratio": 0.0,
     "coordonnees": {
       "lat": 47.482,
       "lon": -1.2148
@@ -1192,7 +1192,7 @@
     "code_postal": "44270",
     "population": 2042,
     "nombre_medecins": 0,
-    "ratio": null,
+    "ratio": 0.0,
     "coordonnees": {
       "lat": 46.9612,
       "lon": -1.7835
@@ -1203,7 +1203,7 @@
     "code_postal": "44640",
     "population": 5335,
     "nombre_medecins": 41,
-    "ratio": null,
+    "ratio": 7.69,
     "coordonnees": {
       "lat": 47.2341,
       "lon": -1.8377
@@ -1214,7 +1214,7 @@
     "code_postal": "44670",
     "population": 437,
     "nombre_medecins": 0,
-    "ratio": null,
+    "ratio": 0.0,
     "coordonnees": {
       "lat": 47.6091,
       "lon": -1.2833
@@ -1225,7 +1225,7 @@
     "code_postal": "44390",
     "population": 3865,
     "nombre_medecins": 0,
-    "ratio": null,
+    "ratio": 0.0,
     "coordonnees": {
       "lat": 47.4063,
       "lon": -1.457
@@ -1236,7 +1236,7 @@
     "code_postal": "44290",
     "population": 1011,
     "nombre_medecins": 0,
-    "ratio": null,
+    "ratio": 0.0,
     "coordonnees": {
       "lat": 47.689,
       "lon": -1.7816
@@ -1247,7 +1247,7 @@
     "code_postal": "44540",
     "population": 829,
     "nombre_medecins": 0,
-    "ratio": null,
+    "ratio": 0.0,
     "coordonnees": {
       "lat": 47.5924,
       "lon": -1.1456
@@ -1258,7 +1258,7 @@
     "code_postal": "44420",
     "population": 2663,
     "nombre_medecins": 4,
-    "ratio": null,
+    "ratio": 1.5,
     "coordonnees": {
       "lat": 47.3838,
       "lon": -2.5449
@@ -1269,7 +1269,7 @@
     "code_postal": "44770",
     "population": 4617,
     "nombre_medecins": 14,
-    "ratio": null,
+    "ratio": 3.03,
     "coordonnees": {
       "lat": 47.144,
       "lon": -2.1813
@@ -1280,7 +1280,7 @@
     "code_postal": "44140",
     "population": 2802,
     "nombre_medecins": 18,
-    "ratio": null,
+    "ratio": 6.42,
     "coordonnees": {
       "lat": 47.0244,
       "lon": -1.4382
@@ -1291,7 +1291,7 @@
     "code_postal": "44630",
     "population": 5281,
     "nombre_medecins": 29,
-    "ratio": null,
+    "ratio": 5.49,
     "coordonnees": {
       "lat": 47.5578,
       "lon": -1.8831
@@ -1302,7 +1302,7 @@
     "code_postal": "44160",
     "population": 11249,
     "nombre_medecins": 58,
-    "ratio": null,
+    "ratio": 5.16,
     "coordonnees": {
       "lat": 47.4365,
       "lon": -2.092
@@ -1313,7 +1313,7 @@
     "code_postal": "44860",
     "population": 6942,
     "nombre_medecins": 74,
-    "ratio": null,
+    "ratio": 10.66,
     "coordonnees": {
       "lat": 47.1266,
       "lon": -1.5683
@@ -1324,7 +1324,7 @@
     "code_postal": "44210",
     "population": 18382,
     "nombre_medecins": 69,
-    "ratio": null,
+    "ratio": 3.75,
     "coordonnees": {
       "lat": 47.1302,
       "lon": -2.0569
@@ -1335,7 +1335,7 @@
     "code_postal": "44380",
     "population": 12530,
     "nombre_medecins": 81,
-    "ratio": null,
+    "ratio": 6.46,
     "coordonnees": {
       "lat": 47.2599,
       "lon": -2.3225
@@ -1346,7 +1346,7 @@
     "code_postal": "44710",
     "population": 3046,
     "nombre_medecins": 16,
-    "ratio": null,
+    "ratio": 5.25,
     "coordonnees": {
       "lat": 47.1383,
       "lon": -1.7674
@@ -1357,7 +1357,7 @@
     "code_postal": "44522",
     "population": 1050,
     "nombre_medecins": 0,
-    "ratio": null,
+    "ratio": 0.0,
     "coordonnees": {
       "lat": 47.4666,
       "lon": -1.184
@@ -1368,7 +1368,7 @@
     "code_postal": "44510",
     "population": 4007,
     "nombre_medecins": 5,
-    "ratio": null,
+    "ratio": 1.25,
     "coordonnees": {
       "lat": 47.2733,
       "lon": -2.4333
@@ -1379,7 +1379,7 @@
     "code_postal": "44770",
     "population": 1246,
     "nombre_medecins": 6,
-    "ratio": null,
+    "ratio": 4.82,
     "coordonnees": {
       "lat": 47.133,
       "lon": -2.2106
@@ -1390,7 +1390,7 @@
     "code_postal": "44260",
     "population": 3557,
     "nombre_medecins": 17,
-    "ratio": null,
+    "ratio": 4.78,
     "coordonnees": {
       "lat": 47.3784,
       "lon": -2.0239
@@ -1401,7 +1401,7 @@
     "code_postal": "44390",
     "population": 1124,
     "nombre_medecins": 7,
-    "ratio": null,
+    "ratio": 6.23,
     "coordonnees": {
       "lat": 47.5142,
       "lon": -1.6119
@@ -1412,7 +1412,7 @@
     "code_postal": "44750",
     "population": 1541,
     "nombre_medecins": 0,
-    "ratio": null,
+    "ratio": 0.0,
     "coordonnees": {
       "lat": 47.4624,
       "lon": -1.9438
@@ -1423,7 +1423,7 @@
     "code_postal": "44330",
     "population": 1559,
     "nombre_medecins": 0,
-    "ratio": null,
+    "ratio": 0.0,
     "coordonnees": {
       "lat": 47.1837,
       "lon": -1.1931
@@ -1434,7 +1434,7 @@
     "code_postal": "44430",
     "population": 1288,
     "nombre_medecins": 0,
-    "ratio": null,
+    "ratio": 0.0,
     "coordonnees": {
       "lat": 47.2286,
       "lon": -1.2249
@@ -1445,7 +1445,7 @@
     "code_postal": "44140",
     "population": 1932,
     "nombre_medecins": 22,
-    "ratio": null,
+    "ratio": 11.39,
     "coordonnees": {
       "lat": 47.0362,
       "lon": -1.3877
@@ -1456,7 +1456,7 @@
     "code_postal": "44400",
     "population": 43349,
     "nombre_medecins": 229,
-    "ratio": null,
+    "ratio": 5.28,
     "coordonnees": {
       "lat": 47.1733,
       "lon": -1.5573
@@ -1467,7 +1467,7 @@
     "code_postal": "44440",
     "population": 2358,
     "nombre_medecins": 16,
-    "ratio": null,
+    "ratio": 6.79,
     "coordonnees": {
       "lat": 47.5209,
       "lon": -1.3095
@@ -1478,7 +1478,7 @@
     "code_postal": "44640",
     "population": 3272,
     "nombre_medecins": 20,
-    "ratio": null,
+    "ratio": 6.11,
     "coordonnees": {
       "lat": 47.18,
       "lon": -1.8462
@@ -1489,7 +1489,7 @@
     "code_postal": "44660",
     "population": 2152,
     "nombre_medecins": 0,
-    "ratio": null,
+    "ratio": 0.0,
     "coordonnees": {
       "lat": 47.7673,
       "lon": -1.4342
@@ -1500,7 +1500,7 @@
     "code_postal": "44660",
     "population": 705,
     "nombre_medecins": 0,
-    "ratio": null,
+    "ratio": 0.0,
     "coordonnees": {
       "lat": 47.7662,
       "lon": -1.5205
@@ -1511,7 +1511,7 @@
     "code_postal": "44390",
     "population": 4075,
     "nombre_medecins": 0,
-    "ratio": null,
+    "ratio": 0.0,
     "coordonnees": {
       "lat": 47.4924,
       "lon": -1.5807
@@ -1522,7 +1522,7 @@
     "code_postal": "44860",
     "population": 3991,
     "nombre_medecins": 7,
-    "ratio": null,
+    "ratio": 1.75,
     "coordonnees": {
       "lat": 47.1296,
       "lon": -1.6191
@@ -1533,7 +1533,7 @@
     "code_postal": "44117",
     "population": 6949,
     "nombre_medecins": 10,
-    "ratio": null,
+    "ratio": 1.44,
     "coordonnees": {
       "lat": 47.3272,
       "lon": -2.3116
@@ -1544,7 +1544,7 @@
     "code_postal": "44160",
     "population": 3014,
     "nombre_medecins": 15,
-    "ratio": null,
+    "ratio": 4.98,
     "coordonnees": {
       "lat": 47.4541,
       "lon": -2.0288
@@ -1555,7 +1555,7 @@
     "code_postal": "44110",
     "population": 1749,
     "nombre_medecins": 0,
-    "ratio": null,
+    "ratio": 0.0,
     "coordonnees": {
       "lat": 47.7118,
       "lon": -1.4674
@@ -1566,7 +1566,7 @@
     "code_postal": "44250",
     "population": 14645,
     "nombre_medecins": 70,
-    "ratio": null,
+    "ratio": 4.78,
     "coordonnees": {
       "lat": 47.2441,
       "lon": -2.154
@@ -1577,7 +1577,7 @@
     "code_postal": "44310",
     "population": 3499,
     "nombre_medecins": 22,
-    "ratio": null,
+    "ratio": 6.29,
     "coordonnees": {
       "lat": 47.0175,
       "lon": -1.5526
@@ -1588,7 +1588,7 @@
     "code_postal": "44650",
     "population": 3209,
     "nombre_medecins": 7,
-    "ratio": null,
+    "ratio": 2.18,
     "coordonnees": {
       "lat": 46.958,
       "lon": -1.6033
@@ -1599,7 +1599,7 @@
     "code_postal": "44270",
     "population": 1764,
     "nombre_medecins": 0,
-    "ratio": null,
+    "ratio": 0.0,
     "coordonnees": {
       "lat": 46.9464,
       "lon": -1.7172
@@ -1610,7 +1610,7 @@
     "code_postal": "44360",
     "population": 7739,
     "nombre_medecins": 41,
-    "ratio": null,
+    "ratio": 5.3,
     "coordonnees": {
       "lat": 47.2694,
       "lon": -1.7902
@@ -1621,7 +1621,7 @@
     "code_postal": "44690",
     "population": 1246,
     "nombre_medecins": 0,
-    "ratio": null,
+    "ratio": 0.0,
     "coordonnees": {
       "lat": 47.1419,
       "lon": -1.4198
@@ -1632,7 +1632,7 @@
     "code_postal": "44530",
     "population": 3790,
     "nombre_medecins": 1,
-    "ratio": null,
+    "ratio": 0.26,
     "coordonnees": {
       "lat": 47.5099,
       "lon": -2.0639
@@ -1643,7 +1643,7 @@
     "code_postal": "44800",
     "population": 50561,
     "nombre_medecins": 246,
-    "ratio": null,
+    "ratio": 4.87,
     "coordonnees": {
       "lat": 47.2246,
       "lon": -1.6306
@@ -1654,7 +1654,7 @@
     "code_postal": "44150",
     "population": 4890,
     "nombre_medecins": 32,
-    "ratio": null,
+    "ratio": 6.54,
     "coordonnees": {
       "lat": 47.4019,
       "lon": -1.1095
@@ -1665,7 +1665,7 @@
     "code_postal": "44680",
     "population": 2376,
     "nombre_medecins": 0,
-    "ratio": null,
+    "ratio": 0.0,
     "coordonnees": {
       "lat": 47.0999,
       "lon": -1.874
@@ -1676,7 +1676,7 @@
     "code_postal": "44190",
     "population": 2405,
     "nombre_medecins": 0,
-    "ratio": null,
+    "ratio": 0.0,
     "coordonnees": {
       "lat": 47.06,
       "lon": -1.3182
@@ -1687,7 +1687,7 @@
     "code_postal": "44640",
     "population": 6024,
     "nombre_medecins": 39,
-    "ratio": null,
+    "ratio": 6.47,
     "coordonnees": {
       "lat": 47.1919,
       "lon": -1.7198
@@ -1698,7 +1698,7 @@
     "code_postal": "44720",
     "population": 4125,
     "nombre_medecins": 11,
-    "ratio": null,
+    "ratio": 2.67,
     "coordonnees": {
       "lat": 47.3731,
       "lon": -2.2429
@@ -1709,7 +1709,7 @@
     "code_postal": "44450",
     "population": 7768,
     "nombre_medecins": 29,
-    "ratio": null,
+    "ratio": 3.73,
     "coordonnees": {
       "lat": 47.2469,
       "lon": -1.4036
@@ -1720,7 +1720,7 @@
     "code_postal": "44670",
     "population": 963,
     "nombre_medecins": 2,
-    "ratio": null,
+    "ratio": 2.08,
     "coordonnees": {
       "lat": 47.6544,
       "lon": -1.2269
@@ -1731,7 +1731,7 @@
     "code_postal": "44710",
     "population": 2114,
     "nombre_medecins": 0,
-    "ratio": null,
+    "ratio": 0.0,
     "coordonnees": {
       "lat": 47.1443,
       "lon": -1.7118
@@ -1742,7 +1742,7 @@
     "code_postal": "44980",
     "population": 16227,
     "nombre_medecins": 100,
-    "ratio": null,
+    "ratio": 6.16,
     "coordonnees": {
       "lat": 47.2529,
       "lon": -1.4704
@@ -1753,7 +1753,7 @@
     "code_postal": "44190",
     "population": 2118,
     "nombre_medecins": 0,
-    "ratio": null,
+    "ratio": 0.0,
     "coordonnees": {
       "lat": 47.0795,
       "lon": -1.3647
@@ -1764,7 +1764,7 @@
     "code_postal": "44310",
     "population": 2390,
     "nombre_medecins": 0,
-    "ratio": null,
+    "ratio": 0.0,
     "coordonnees": {
       "lat": 47.0578,
       "lon": -1.7235
@@ -1775,7 +1775,7 @@
     "code_postal": "44410",
     "population": 5246,
     "nombre_medecins": 10,
-    "ratio": null,
+    "ratio": 1.91,
     "coordonnees": {
       "lat": 47.3788,
       "lon": -2.3437
@@ -1786,7 +1786,7 @@
     "code_postal": "44550",
     "population": 3221,
     "nombre_medecins": 23,
-    "ratio": null,
+    "ratio": 7.14,
     "coordonnees": {
       "lat": 47.3608,
       "lon": -2.173
@@ -1797,7 +1797,7 @@
     "code_postal": "44680",
     "population": 2644,
     "nombre_medecins": 10,
-    "ratio": null,
+    "ratio": 3.78,
     "coordonnees": {
       "lat": 47.0779,
       "lon": -1.7457
@@ -1808,7 +1808,7 @@
     "code_postal": "44850",
     "population": 5435,
     "nombre_medecins": 36,
-    "ratio": null,
+    "ratio": 6.62,
     "coordonnees": {
       "lat": 47.3537,
       "lon": -1.4369
@@ -1819,7 +1819,7 @@
     "code_postal": "44540",
     "population": 6625,
     "nombre_medecins": 14,
-    "ratio": null,
+    "ratio": 2.11,
     "coordonnees": {
       "lat": 47.5349,
       "lon": -1.1414
@@ -1830,7 +1830,7 @@
     "code_postal": "44730",
     "population": 5520,
     "nombre_medecins": 40,
-    "ratio": null,
+    "ratio": 7.25,
     "coordonnees": {
       "lat": 47.1705,
       "lon": -2.1238
@@ -1841,7 +1841,7 @@
     "code_postal": "44350",
     "population": 2859,
     "nombre_medecins": 29,
-    "ratio": null,
+    "ratio": 10.14,
     "coordonnees": {
       "lat": 47.3862,
       "lon": -2.4139
@@ -1852,7 +1852,7 @@
     "code_postal": "44600",
     "population": 73111,
     "nombre_medecins": 504,
-    "ratio": null,
+    "ratio": 6.89,
     "coordonnees": {
       "lat": 47.2768,
       "lon": -2.2392
@@ -1863,7 +1863,7 @@
     "code_postal": "44460",
     "population": 3304,
     "nombre_medecins": 4,
-    "ratio": null,
+    "ratio": 1.21,
     "coordonnees": {
       "lat": 47.6364,
       "lon": -2.0522
@@ -1874,7 +1874,7 @@
     "code_postal": "44680",
     "population": 7209,
     "nombre_medecins": 35,
-    "ratio": null,
+    "ratio": 4.86,
     "coordonnees": {
       "lat": 47.0864,
       "lon": -1.8184
@@ -1885,7 +1885,7 @@
     "code_postal": "44320",
     "population": 4701,
     "nombre_medecins": 38,
-    "ratio": null,
+    "ratio": 8.08,
     "coordonnees": {
       "lat": 47.2379,
       "lon": -2.0714
@@ -1896,7 +1896,7 @@
     "code_postal": "44310",
     "population": 9392,
     "nombre_medecins": 52,
-    "ratio": null,
+    "ratio": 5.54,
     "coordonnees": {
       "lat": 47.0689,
       "lon": -1.6443
@@ -1907,7 +1907,7 @@
     "code_postal": "44160",
     "population": 2447,
     "nombre_medecins": 6,
-    "ratio": null,
+    "ratio": 2.45,
     "coordonnees": {
       "lat": 47.4421,
       "lon": -2.1838
@@ -1918,7 +1918,7 @@
     "code_postal": "44230",
     "population": 28373,
     "nombre_medecins": 152,
-    "ratio": null,
+    "ratio": 5.36,
     "coordonnees": {
       "lat": 47.2065,
       "lon": -1.5023
@@ -1929,7 +1929,7 @@
     "code_postal": "44320",
     "population": 2846,
     "nombre_medecins": 8,
-    "ratio": null,
+    "ratio": 2.81,
     "coordonnees": {
       "lat": 47.2418,
       "lon": -1.987
@@ -1940,7 +1940,7 @@
     "code_postal": "44590",
     "population": 1527,
     "nombre_medecins": 8,
-    "ratio": null,
+    "ratio": 5.24,
     "coordonnees": {
       "lat": 47.6606,
       "lon": -1.5026
@@ -1951,7 +1951,7 @@
     "code_postal": "44880",
     "population": 8534,
     "nombre_medecins": 42,
-    "ratio": null,
+    "ratio": 4.92,
     "coordonnees": {
       "lat": 47.275,
       "lon": -1.6839
@@ -1962,7 +1962,7 @@
     "code_postal": "44260",
     "population": 9465,
     "nombre_medecins": 106,
-    "ratio": null,
+    "ratio": 11.2,
     "coordonnees": {
       "lat": 47.3542,
       "lon": -1.9203
@@ -1973,7 +1973,7 @@
     "code_postal": "44530",
     "population": 1693,
     "nombre_medecins": 0,
-    "ratio": null,
+    "ratio": 0.0,
     "coordonnees": {
       "lat": 47.5534,
       "lon": -2.0656
@@ -1984,7 +1984,7 @@
     "code_postal": "44590",
     "population": 1658,
     "nombre_medecins": 0,
-    "ratio": null,
+    "ratio": 0.0,
     "coordonnees": {
       "lat": 47.7274,
       "lon": -1.5762
@@ -1995,7 +1995,7 @@
     "code_postal": "44840",
     "population": 9163,
     "nombre_medecins": 57,
-    "ratio": null,
+    "ratio": 6.22,
     "coordonnees": {
       "lat": 47.142,
       "lon": -1.5195
@@ -2006,7 +2006,7 @@
     "code_postal": "44110",
     "population": 1965,
     "nombre_medecins": 3,
-    "ratio": null,
+    "ratio": 1.53,
     "coordonnees": {
       "lat": 47.7262,
       "lon": -1.2871
@@ -2017,7 +2017,7 @@
     "code_postal": "44660",
     "population": 339,
     "nombre_medecins": 0,
-    "ratio": null,
+    "ratio": 0.0,
     "coordonnees": {
       "lat": 47.8205,
       "lon": -1.4482
@@ -2028,7 +2028,7 @@
     "code_postal": "44240",
     "population": 7457,
     "nombre_medecins": 42,
-    "ratio": null,
+    "ratio": 5.63,
     "coordonnees": {
       "lat": 47.35,
       "lon": -1.5237
@@ -2039,7 +2039,7 @@
     "code_postal": "44440",
     "population": 1820,
     "nombre_medecins": 5,
-    "ratio": null,
+    "ratio": 2.75,
     "coordonnees": {
       "lat": 47.4654,
       "lon": -1.2838
@@ -2050,7 +2050,7 @@
     "code_postal": "44360",
     "population": 2005,
     "nombre_medecins": 9,
-    "ratio": null,
+    "ratio": 4.49,
     "coordonnees": {
       "lat": 47.3299,
       "lon": -1.7892
@@ -2061,7 +2061,7 @@
     "code_postal": "44470",
     "population": 10956,
     "nombre_medecins": 127,
-    "ratio": null,
+    "ratio": 11.59,
     "coordonnees": {
       "lat": 47.2755,
       "lon": -1.4294
@@ -2072,7 +2072,7 @@
     "code_postal": "44390",
     "population": 2619,
     "nombre_medecins": 0,
-    "ratio": null,
+    "ratio": 0.0,
     "coordonnees": {
       "lat": 47.4552,
       "lon": -1.4166
@@ -2083,7 +2083,7 @@
     "code_postal": "44650",
     "population": 1936,
     "nombre_medecins": 4,
-    "ratio": null,
+    "ratio": 2.07,
     "coordonnees": {
       "lat": 46.9098,
       "lon": -1.685
@@ -2094,7 +2094,7 @@
     "code_postal": "44440",
     "population": 1124,
     "nombre_medecins": 0,
-    "ratio": null,
+    "ratio": 0.0,
     "coordonnees": {
       "lat": 47.4854,
       "lon": -1.3597
@@ -2105,7 +2105,7 @@
     "code_postal": "44170",
     "population": 976,
     "nombre_medecins": 0,
-    "ratio": null,
+    "ratio": 0.0,
     "coordonnees": {
       "lat": 47.614,
       "lon": -1.5281
@@ -2116,7 +2116,7 @@
     "code_postal": "44119",
     "population": 10414,
     "nombre_medecins": 36,
-    "ratio": null,
+    "ratio": 3.46,
     "coordonnees": {
       "lat": 47.3146,
       "lon": -1.6312
@@ -2127,7 +2127,7 @@
     "code_postal": "44570",
     "population": 8234,
     "nombre_medecins": 43,
-    "ratio": null,
+    "ratio": 5.22,
     "coordonnees": {
       "lat": 47.3116,
       "lon": -2.2052
@@ -2138,7 +2138,7 @@
     "code_postal": "44420",
     "population": 4862,
     "nombre_medecins": 29,
-    "ratio": null,
+    "ratio": 5.96,
     "coordonnees": {
       "lat": 47.3402,
       "lon": -2.4906
@@ -2149,7 +2149,7 @@
     "code_postal": "44330",
     "population": 9524,
     "nombre_medecins": 112,
-    "ratio": null,
+    "ratio": 11.76,
     "coordonnees": {
       "lat": 47.1763,
       "lon": -1.2645
@@ -2160,7 +2160,7 @@
     "code_postal": "44370",
     "population": 7509,
     "nombre_medecins": 0,
-    "ratio": null,
+    "ratio": 0.0,
     "coordonnees": {
       "lat": 47.4352,
       "lon": -1.0319
@@ -2171,7 +2171,7 @@
     "code_postal": "44170",
     "population": 2084,
     "nombre_medecins": 0,
-    "ratio": null,
+    "ratio": 0.0,
     "coordonnees": {
       "lat": 47.5381,
       "lon": -1.7031
@@ -2182,7 +2182,7 @@
     "code_postal": "44120",
     "population": 26048,
     "nombre_medecins": 213,
-    "ratio": null,
+    "ratio": 8.18,
     "coordonnees": {
       "lat": 47.1532,
       "lon": -1.4679
@@ -2193,7 +2193,7 @@
     "code_postal": "44116",
     "population": 4110,
     "nombre_medecins": 0,
-    "ratio": null,
+    "ratio": 0.0,
     "coordonnees": {
       "lat": 46.9702,
       "lon": -1.4172
@@ -2204,7 +2204,7 @@
     "code_postal": "44360",
     "population": 6633,
     "nombre_medecins": 30,
-    "ratio": null,
+    "ratio": 4.52,
     "coordonnees": {
       "lat": 47.317,
       "lon": -1.7198
@@ -2215,7 +2215,7 @@
     "code_postal": "44110",
     "population": 687,
     "nombre_medecins": 0,
-    "ratio": null,
+    "ratio": 0.0,
     "coordonnees": {
       "lat": 47.7686,
       "lon": -1.2856
@@ -2226,7 +2226,7 @@
     "code_postal": "44640",
     "population": 1716,
     "nombre_medecins": 0,
-    "ratio": null,
+    "ratio": 0.0,
     "coordonnees": {
       "lat": 47.1996,
       "lon": -1.8968
@@ -2237,7 +2237,7 @@
     "code_postal": "44810",
     "population": 1559,
     "nombre_medecins": 0,
-    "ratio": null,
+    "ratio": 0.0,
     "coordonnees": {
       "lat": 47.4774,
       "lon": -1.6658
@@ -2248,7 +2248,7 @@
     "code_postal": "44522",
     "population": 1258,
     "nombre_medecins": 0,
-    "ratio": null,
+    "ratio": 0.0,
     "coordonnees": {
       "lat": 47.435,
       "lon": -1.1413
@@ -2259,7 +2259,7 @@
     "code_postal": "44140",
     "population": 3691,
     "nombre_medecins": 44,
-    "ratio": null,
+    "ratio": 11.92,
     "coordonnees": {
       "lat": 47.0579,
       "lon": -1.5312
@@ -2270,7 +2270,7 @@
     "code_postal": "44170",
     "population": 1815,
     "nombre_medecins": 0,
-    "ratio": null,
+    "ratio": 0.0,
     "coordonnees": {
       "lat": 47.5208,
       "lon": -1.687

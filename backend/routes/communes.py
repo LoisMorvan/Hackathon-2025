@@ -109,12 +109,13 @@ def update_commune_info_file() -> None:
         enriched_data = []
         for c in raw_data:
             nb_medecins = compteur_medecin(c["nom"])
+            population = c["population"]
             enriched_data.append({
                 "nom_commune": c["nom"],
                 "code_postal": ", ".join(c["codesPostaux"]),
-                "population": c.get("population", 0),
+                "population": population,
                 "nombre_medecins": nb_medecins,
-                "ratio": round(c.get("population", 0) / nb_medecins, 2) if nb_medecins else None,
+                "ratio": round(nb_medecins / population * 1000, 2) if population else None,
                 "coordonnees": {
                     "lat": c["centre"]["coordinates"][1],
                     "lon": c["centre"]["coordinates"][0]
