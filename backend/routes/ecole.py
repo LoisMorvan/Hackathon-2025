@@ -27,7 +27,8 @@ def stats_ecoles(ville: str = Query(default=None, description="Filtrer par nom d
         fichier = DATA_FILE  # Exemple statique, tu peux automatiser selon le plus récent
 
         if not os.path.exists(fichier):
-            raise HTTPException(status_code=404, detail="Fichier de données non trouvé")
+            raise HTTPException(
+                status_code=404, detail="Fichier de données non trouvé")
 
         with open(fichier, "r", encoding="utf-8") as f:
             all_results = json.load(f)
@@ -49,7 +50,7 @@ def stats_ecoles(ville: str = Query(default=None, description="Filtrer par nom d
             denom = ecole.get("denomination_principale", "").lower()
             if any(mot in denom for mot in ["ecole", "maternelle", "élémentaire", "primaire"]):
                 counts["maternelle_elementaire"] += 1
-            elif any(mot in denom for mot in ["college", "lycee","enseign"]):
+            elif any(mot in denom for mot in ["college", "lycee", "enseign"]):
                 counts["college_lycee"] += 1
 
         return {
@@ -59,8 +60,9 @@ def stats_ecoles(ville: str = Query(default=None, description="Filtrer par nom d
         }
 
     except Exception as e:
-        print(f"💥 Erreur : {e}")
-        raise HTTPException(status_code=500, detail="Erreur lors du traitement des données locales")
+        print(f"Erreur : {e}")
+        raise HTTPException(
+            status_code=500, detail="Erreur lors du traitement des données locales")
 
 
 def fetch_all_ecoles() -> list:
@@ -113,7 +115,9 @@ def classify_etablissements(data: list) -> dict:
 
     return counts
 
+
 DATA_FILE = os.path.join(os.getcwd(), "ecoles_44_.json")
+
 
 @router.get("/admin/ecoles", tags=["Écoles"])
 def ecoles():
@@ -148,9 +152,10 @@ def ecoles():
         with open(filename, "w", encoding="utf-8") as f:
             json.dump(all_results, f, ensure_ascii=False, indent=4)
 
-        print(f"📁 Données enregistrées dans le fichier : {filename}")
+        print(f"Données enregistrées dans le fichier : {filename}")
         return {"message": f"Fichier JSON généré : {filename}", "total": len(all_results)}
 
     except requests.exceptions.RequestException as e:
-        print(f"📡 Erreur API : {e}")
-        raise HTTPException(status_code=500, detail="Erreur lors de la récupération des données")
+        print(f"Erreur API : {e}")
+        raise HTTPException(
+            status_code=500, detail="Erreur lors de la récupération des données")
