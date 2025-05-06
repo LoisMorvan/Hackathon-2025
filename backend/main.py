@@ -122,7 +122,7 @@ def compteur_medecin(commune: Optional[str] = None) -> int:
 
 if __name__ == "__main__":
     try:
-        result = commune_info("nantes")  # ou None pour tout
+        result = commune_info()  # ou None pour tout
         print(json.dumps(
             [r.model_dump() for r in result] if isinstance(result, list) else result.model_dump(),
             indent=2, ensure_ascii=False

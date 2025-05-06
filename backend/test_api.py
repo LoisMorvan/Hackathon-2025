@@ -5,6 +5,16 @@ import os
 import json
 
 client = TestClient(app)
+from unittest.mock import mock_open, patch
+
+sample_data = json.dumps([{
+    "nom_commune": "Nantes",
+    "code_postal": "44000",
+    "population": 300000,
+    "nombre_medecins": 150,
+    "ratio": 0.5,
+    "coordonnees": {"lat": 47.218371, "lon": -1.553621}
+}])
 
 def test_index():
     response = client.get("/")
@@ -22,37 +32,17 @@ def test_get_communes_by_name():
     assert response.status_code == 200
     assert any("Nantes" in c["nom"] for c in response.json())
 
-def test_commune_info_all(monkeypatch):
-    sample_data = [{
-        "nom_commune": "Nantes",
-        "code_postal": "44000",
-        "population": 300000,
-        "nombre_medecins": 150,
-        "ratio": 0.5,
-        "coordonnees": {"lat": 47.218371, "lon": -1.553621}
-    }]
-
-    file_path = os.path.join(os.getcwd(), "communes_info.json")
-    with open(file_path, "w", encoding="utf-8") as f:
-        json.dump(sample_data, f)
-
+@patch("builtins.open", new_callable=mock_open, read_data=sample_data)
+@patch("os.path.exists", return_value=True)
+def test_commune_info_all(mock_exists, mock_file):
     response = client.get("/commune-info")
     assert response.status_code == 200
     assert isinstance(response.json(), list)
     assert response.json()[0]["nom_commune"] == "Nantes"
 
-    os.remove(file_path)
-
-def test_commune_info_by_name(monkeypatch):
-    file_path = os.path.join(os.getcwd(), "communes_info.json")
-    with open(file_path, "w", encoding="utf-8") as f:
-        json.dump([{
-            "nom_commune": "Nantes",
-            "code_postal": "44000",
-            "population": 300000,
-            "nombre_medecins": 150,
-            "ratio": 0.5,
-            "coordonnees": {"lat": 47.218371, "lon": -1.553621}
-        }], f)
-
-    response = client.get
+@patch("builtins.open", new_callable=mock_open, read_data=sample_data)
+@patch("os.path.exists", return_value=True)
+def test_commune_info_by_name(mock_exists, mock_file):
+    response = client.get("/commune-info?value=nantes")
+    assert response.status_code == 200
+    assert response.json()["nom_commune"].lower() == "nantes"
