@@ -154,15 +154,11 @@ body {
 
 /*footer*/
 footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
   background-color: cadetblue;
   color: #ffffff;
   text-align: center;
   padding: 20px 0;
-  z-index: 10;
+  width: 100%;
 }
 
 footer a {

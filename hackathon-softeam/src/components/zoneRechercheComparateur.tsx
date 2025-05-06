@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { getCommunes, getCommuneInfo, getEtablissements } from "../services/services";
+import { getCommunes, getCommuneInfo, getEtablissements, getEcolesStats } from "../services/services";
 import ApexChart from './column-chart-comparateur'; // Import du composant du graphe
 import '../styles/zoneRecherche.css';
 
@@ -25,6 +25,8 @@ const ZoneRecherche = () => {
     communeInfo2: any[];
     etablissements1: any[];
     etablissements2: any[];
+    ecoles1: any[];
+    ecoles2: any[];
   } | null>(null);
 
   useEffect(() => {
@@ -86,13 +88,23 @@ const ZoneRecherche = () => {
         noms2.map(nom => getEtablissements(nom))
       );
   
-      console.log("Informations des communes pour Zone 1 :", communeInfo1);
-      console.log("Établissements pour Zone 1 :", etablissements1);
-      console.log("Informations des communes pour Zone 2 :", communeInfo2);
-      console.log("Établissements pour Zone 2 :", etablissements2);
-
+      // Récupération des statistiques des écoles pour chaque commune
+      const ecoles1 = await Promise.all(
+        noms1.map(nom => getEcolesStats(nom))
+      );
+      const ecoles2 = await Promise.all(
+        noms2.map(nom => getEcolesStats(nom))
+      );
+  
       // Mise à jour des données du graphe
-      setChartData({ communeInfo1, communeInfo2, etablissements1, etablissements2 });
+      setChartData({
+        communeInfo1,
+        communeInfo2,
+        etablissements1,
+        etablissements2,
+        ecoles1,
+        ecoles2,
+      });
     } catch (error) {
       console.error("Erreur lors de la recherche :", error);
       alert("Une erreur est survenue lors de la recherche.");
@@ -164,6 +176,8 @@ const ZoneRecherche = () => {
           <ApexChart
             ville1={chartData.communeInfo1}
             ville2={chartData.communeInfo2}
+            ecoles1={chartData.ecoles1}
+            ecoles2={chartData.ecoles2}
           />
         </div>
       )}

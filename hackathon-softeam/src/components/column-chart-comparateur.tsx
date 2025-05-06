@@ -5,29 +5,36 @@ import { ApexOptions } from "apexcharts";
 interface ApexChartProps {
   ville1: any[];
   ville2: any[];
+  ecoles1: any[];
+  ecoles2: any[];
 }
 
-const ApexChart: React.FC<ApexChartProps> = ({ ville1, ville2 }) => {
-  const categories = ["Commerce", "Transport", "Scolarité"];
+const ApexChart: React.FC<ApexChartProps> = ({ ville1, ville2, ecoles1, ecoles2 }) => {
+  const categories = ["Commerce", "Transport", "Ecoles"];
   const [ville1Data, setVille1Data] = useState<number[]>([0, 0, 0]);
   const [ville2Data, setVille2Data] = useState<number[]>([0, 0, 0]);
   const ideal = [8, 3, 4];
 
+  const ville1Name = ville1.map(v => v.nom_commune).join(", ");
+  const ville2Name = ville2.map(v => v.nom_commune).join(", ");
+
   useEffect(() => {
-    if (ville1) {
-      // Simule les données pour Ville 1
-      setVille1Data([3, 0, 2]); // Remplace par des données dynamiques si nécessaire
+    if (ville1 && ecoles1) {
+      // Calcule le total des écoles pour Ville 1
+      const totalEcoles1 = ecoles1.reduce((sum, ecole) => sum + ecole.nombre_total, 0);
+      setVille1Data([3, 0, totalEcoles1]); // Ajoute le total des écoles comme 4e valeur
     }
-    if (ville2) {
-      // Simule les données pour Ville 2
-      setVille2Data([6, 4, 1]); // Remplace par des données dynamiques si nécessaire
+    if (ville2 && ecoles2) {
+      // Calcule le total des écoles pour Ville 2
+      const totalEcoles2 = ecoles2.reduce((sum, ecole) => sum + ecole.nombre_total, 0);
+      setVille2Data([6, 4, totalEcoles2]); // Ajoute le total des écoles comme 4e valeur
     }
-  }, [ville1, ville2]);
+  }, [ville1, ville2, ecoles1, ecoles2]);
 
   const chartData = {
     series: [
-      { name: "Ville 1", data: ville1Data },
-      { name: "Ville 2", data: ville2Data },
+      { name: ville1Name, data: ville1Data },
+      { name: ville2Name, data: ville2Data },
       { name: "Idéal", data: ideal },
     ],
     options: {
