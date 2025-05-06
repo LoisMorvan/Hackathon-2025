@@ -76,3 +76,25 @@ Hackathon/
 ├── hackathon-softeam/    # Frontend React
 └── start.sh              # Script d’installation automatique
 ```
+
+## 🪵 Logs d’erreurs backend
+
+Tous les logs d’erreurs du backend sont automatiquement enregistrés dans un fichier :
+
+```
+Hackathon/backend/logs/app.log
+```
+
+Ce fichier contient :
+
+- Les erreurs d’exécution FastAPI/Uvicorn
+- Les traces Python (exceptions)
+- Les erreurs réseau/API éventuelles
+
+Cela permet un **suivi facile des problèmes** sans avoir besoin de rester connecté au terminal.
+
+> 💡 **Astuce développeur :** Pour observer les erreurs en temps réel, utilisez :
+
+```bash
+tail -f backend/logs/app.log
+```

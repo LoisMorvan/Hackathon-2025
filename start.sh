@@ -4,7 +4,7 @@ echo "🚀 Initialisation de l'application..."
 
 # === BACKEND ===
 echo "📦 Installation des dépendances backend..."
-cd backend || exit
+cd backend || exit 1
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
@@ -13,9 +13,12 @@ pip install -r requirements.txt
 echo "🟢 Démarrage du backend FastAPI sur http://localhost:8000"
 python -m uvicorn main:app --reload &
 
+# Retour au dossier racine avant de passer au frontend
+cd ..
+
 # === FRONTEND ===
 echo "📦 Installation des dépendances frontend..."
-cd ../hackathon-softeam || exit
+cd hackathon-softeam || exit 1
 npm install
 
 # Lancer le frontend
